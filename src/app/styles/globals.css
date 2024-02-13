@@ -17,14 +17,7 @@
 } */ 
 
 body {
-    color: rgb(var(--foreground-rgb));
     font-family: var(--font-poppins); /* Use font variable from layout */
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(var(--background-end-rgb))
-        )
-        rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
