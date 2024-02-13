@@ -98,7 +98,7 @@ const register = () => {
             </div>
             <div className="flex flex-col items-center gap-1">
                 <p className="text-[#9A9A9A] font-medium text-xs">Sudah mempunyai akun?</p>
-                <a href="" className="text-xs text-[#4CACBC] underline">Masuk disini</a>
+                <a href="/login" className="text-xs text-[#4CACBC] underline">Masuk disini</a>
             </div>
           </div>
         </div>

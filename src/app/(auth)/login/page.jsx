@@ -93,7 +93,7 @@ const login = () => {
         </div>
         <div className="flex flex-col items-center gap-1">
             <p className="text-[#9A9A9A] font-medium text-xs">Belum mempunyai akun?</p>
-            <a href="" className="text-xs text-[#4CACBC] underline">Daftar disini</a>
+            <a href="/register" className="text-xs text-[#4CACBC] underline">Daftar disini</a>
         </div>
       </div>
     </div>
