@@ -18,7 +18,7 @@ module.exports = {
                 primary: '#F6E3C5',
                 secondary: '#A0D995',
                 thirdy: '#6CC4A1',
-                fourty: '#4CACBC'
+                fourty: '#4CACBC',
             }
         }
     },

@@ -7,11 +7,11 @@ export const metadata = {
 
 const register = () => {
     return (
-        <div className="h-screen w-dvw flex flex-row">
-          <div className="w-[40%] relative">
+        <div className="min-h-screen w-dvw flex flex-row">
+          <div className="hidden md:flex md:w-1/2 lg:w-[40%] relative">
             <Image src={"/images/register.webp"} fill={true} quality={100}></Image>
           </div>
-          <div className="w-[60%] flex flex-col justify-center px-32 gap-8">
+          <div className="w-full md:w-1/2 lg:w-[60%] flex flex-col justify-center px-12 md:px-24 lg:px-32 gap-8">
             <h1 className="font-bold text-xl">Daftar</h1>
             <div className="flex flex-col gap-4">
               <input
@@ -34,7 +34,7 @@ const register = () => {
               </button>
             </div>
             <div className="flex flex-col items-center gap-2">
-              <h1 className="font-bold text-center">Atau masuk dengan</h1>
+              <h1 className="font-bold text-center">Atau daftar dengan</h1>
               <div className="flex flex-row gap-4 justify-center">
                 <a href="">
                   <svg
