@@ -111,7 +111,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="inset-0 relative">
-          <button
+            <button
               className="absolute left-0 h-8 w-8 md:h-12 md:w-12 rounded-full bg-color-fourty z-20 top-1/2 -translate-y-1/2 drop-shadow-lg grid place-content-center"
               onClick={scrollToBack}
             >
@@ -152,7 +152,12 @@ export default function Home() {
             >
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 1</h1>
@@ -170,15 +175,23 @@ export default function Home() {
                     <button className="bg-transparent outline-color-white outline outline-1 rounded-2xl p-1 md:p-2 w-1/2">
                       Lihat detail
                     </button>
-                    <button className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2">
+                    <Link
+                      className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2 flex justify-center"
+                      href="/booking"
+                    >
                       Pesan
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 2</h1>
@@ -204,7 +217,12 @@ export default function Home() {
               </div>
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 3</h1>
@@ -401,7 +419,9 @@ export default function Home() {
       <section className="min-h-dvh px-8 md:px-12 pt-8 flex flex-col gap-8">
         <div className="flex flex-col gap-8">
           <div className="flex justify-between items-center">
-            <h1 className="font-bold text-2xl md:text-4xl w-1/2">Kategori Tempat</h1>
+            <h1 className="font-bold text-2xl md:text-4xl w-1/2">
+              Kategori Tempat
+            </h1>
             <Link
               href=""
               className="text-color-fourty underline font-bold flex gap-1 items-center"
