@@ -19,6 +19,8 @@ module.exports = {
                 secondary: '#A0D995',
                 thirdy: '#6CC4A1',
                 fourty: '#4CACBC',
+                white: '#ffffff',
+                black: '#000000',
             }
         }
     },
