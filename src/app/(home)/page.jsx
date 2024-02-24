@@ -16,7 +16,7 @@ export default function Home() {
     }
   };
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col w-[100vw]">
       <section className="h-[100vh] md:h-[120dvh] w-full pt-[100px] px-8 md:px-12 relative">
         <Image
           src="/images/bgHome.png"
@@ -111,7 +111,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="inset-0 relative">
-          <button
+            <button
               className="absolute left-0 h-8 w-8 md:h-12 md:w-12 rounded-full bg-color-fourty z-20 top-1/2 -translate-y-1/2 drop-shadow-lg grid place-content-center"
               onClick={scrollToBack}
             >
@@ -152,7 +152,12 @@ export default function Home() {
             >
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 1</h1>
@@ -178,7 +183,12 @@ export default function Home() {
               </div>
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 2</h1>
@@ -204,7 +214,12 @@ export default function Home() {
               </div>
               <div className="bg-color-fourty rounded-2xl flex flex-row w-[95%] md:w-2/5 flex-none scroll-snap-start">
                 <div className="w-2/3 md:w-[45%] rounded-2xl overflow-hidden relative">
-                  <Image src="/images/bromo.jpg" fill={true} alt="Bromo" style={{objectFit: "cover"}}/>
+                  <Image
+                    src="/images/bromo.jpg"
+                    fill={true}
+                    alt="Bromo"
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div className="rounded-2xl text-left text-color-white p-3 flex flex-col gap-1 text-sm md:text-md">
                   <h1 className="font-semibold">Gunung Bromo, Jawa Timur 3</h1>
@@ -253,8 +268,51 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div className="flex gap-8  overflow-x-auto">
-            <div className="bg-color-fourty rounded-2xl flex flex-col w-full md:w-1/3">
+          <div className="flex gap-8 w-full overflow-x-scroll">
+            <div className="bg-color-fourty rounded-2xl flex flex-col md:w-1/3 w-full flex-none">
+              <div className="h-[212px] rounded-2xl overflow-hidden relative">
+                <Image
+                  src="/images/candipenataran.png"
+                  fill={true}
+                  alt="Candi Penataran"
+                />
+              </div>
+              <div className="rounded-2xl text-[#ffffff] p-3 flex flex-col gap-1">
+                <div className="flex flex-row gap-2 items-center font-semibold">
+                  <svg
+                    width="30"
+                    height="28"
+                    viewBox="0 0 31 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z"
+                      fill="#FFCD6B"
+                    />
+                  </svg>
+                  <h3>4.9</h3>
+                  <h3>(90 reviews)</h3>
+                </div>
+                <h1 className="font-semibold text-color-black">
+                  Gunung Bromo, Jawa Timur
+                </h1>
+                <h2 className="font-light">Indonesia</h2>
+                <h3 className="font-semibold text-[#000000]">Rp 800.000</h3>
+                <p className="text-sm text-[#f9f9f9] w-3/4">
+                  Untuk 1 orang tiket pesawat, makan siang, makan....
+                </p>
+                <div className="flex flex-row gap-3 py-2">
+                  <button className="bg-transparent outline-[#ffffff] outline outline-1 rounded-2xl p-2 w-1/2">
+                    Lihat detail
+                  </button>
+                  <button className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2">
+                    Pesan
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="bg-color-fourty rounded-2xl flex flex-col md:w-1/3 w-full flex-none">
               <div className="h-[212px] rounded-2xl overflow-hidden relative">
                 <Image
                   src="/images/candipenataran.png"
@@ -297,50 +355,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-color-fourty rounded-2xl flex flex-col w-1/3">
-              <div className="h-[212px] rounded-2xl overflow-hidden relative">
-                <Image
-                  src="/images/candipenataran.png"
-                  fill={true}
-                  alt="Candi Penataran"
-                />
-              </div>
-              <div className="rounded-2xl text-[#ffffff] p-3 flex flex-col gap-1">
-                <div className="flex flex-row gap-2 items-center font-semibold">
-                  <svg
-                    width="30"
-                    height="28"
-                    viewBox="0 0 31 29"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z"
-                      fill="#FFCD6B"
-                    />
-                  </svg>
-                  <h3>4.9</h3>
-                  <h3>(90 reviews)</h3>
-                </div>
-                <h1 className="font-semibold text-[#000000]">
-                  Gunung Bromo, Jawa Timur
-                </h1>
-                <h2 className="font-light">Indonesia</h2>
-                <h3 className="font-semibold text-[#000000]">Rp 800.000</h3>
-                <p className="text-sm text-[#f9f9f9] w-3/4">
-                  Untuk 1 orang tiket pesawat, makan siang, makan....
-                </p>
-                <div className="flex flex-row gap-3 py-2">
-                  <button className="bg-transparent outline-[#ffffff] outline outline-1 rounded-2xl p-2 w-1/2">
-                    Lihat detail
-                  </button>
-                  <button className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2">
-                    Pesan
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="bg-color-fourty rounded-2xl flex flex-col w-1/3">
+            <div className="bg-color-fourty rounded-2xl flex flex-col md:w-1/3 w-full flex-none">
               <div className="h-[212px] rounded-2xl overflow-hidden relative">
                 <Image
                   src="/images/candipenataran.png"
@@ -401,7 +416,9 @@ export default function Home() {
       <section className="min-h-dvh px-8 md:px-12 pt-8 flex flex-col gap-8">
         <div className="flex flex-col gap-8">
           <div className="flex justify-between items-center">
-            <h1 className="font-bold text-2xl md:text-4xl w-1/2">Kategori Tempat</h1>
+            <h1 className="font-bold text-2xl md:text-4xl w-1/2">
+              Kategori Tempat
+            </h1>
             <Link
               href=""
               className="text-color-fourty underline font-bold flex gap-1 items-center"
@@ -421,20 +438,20 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-          <div className="h-[65dvh] flex justify-between gap-2 w-fit overflow-scroll">
-            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square">
+          <div className="h-[65dvh] flex justify-between gap-2 w-full overflow-x-scroll">
+            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none">
               <p className="p-1 rounded-2xl absolute left-3 top-3 bg-[#F6E3C5] font-semibold z-10">
                 Gunung
               </p>
               <Image src="/images/bromo.jpg" fill={true} alt="Bromo" />
             </div>
-            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square">
+            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none">
               <p className="p-1 rounded-2xl absolute left-3 top-3 bg-[#F6E3C5] font-semibold z-10">
                 Air Terjun
               </p>
               <Image src="/images/airterjun.png" fill={true} alt="Air Terjun" />
             </div>
-            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square">
+            <div className="md:w-[30%] rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none">
               <p className="p-1 rounded-2xl absolute left-3 top-3 bg-[#F6E3C5] font-semibold z-10">
                 Pantai
               </p>
@@ -442,7 +459,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F6E3C5] p-8 -mx-12 flex flex-col gap-8">
+        
+      </section>
+      <div className="bg-[#F6E3C5] p-8 flex flex-col gap-8">
           <div className="flex flex-col gap-2 font-bold items-center">
             <h3 className="md:text-2xl">Testimonial Pelanggan</h3>
             <h1 className="md:text-4xl">Pendapat pelanggan tentang kami</h1>
@@ -600,7 +619,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
     </main>
   );
 }
