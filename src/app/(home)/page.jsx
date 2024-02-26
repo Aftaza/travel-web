@@ -177,7 +177,7 @@ export default function Home() {
                     </button>
                     <Link
                       className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2 flex justify-center"
-                      href="/booking"
+                      href="/booking/isiform"
                     >
                       Pesan
                     </Link>
