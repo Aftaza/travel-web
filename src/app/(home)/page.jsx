@@ -175,9 +175,12 @@ export default function Home() {
                     <button className="bg-transparent outline-color-white outline outline-1 rounded-2xl p-1 md:p-2 w-1/2">
                       Lihat detail
                     </button>
-                    <button className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2">
+                    <Link
+                      className="bg-color-primary rounded-2xl p-2 text-color-black w-1/2 flex justify-center"
+                      href="/booking/isiform"
+                    >
                       Pesan
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
