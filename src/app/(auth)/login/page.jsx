@@ -7,9 +7,20 @@ export const metadata = {
 
 const login = () => {
   return (
-    <div className="min-h-screen w-dvw flex flex-row">
+    <div className="h-screen w-dvw flex flex-row overflow-hidden">
       <div className="hidden md:flex md:w-1/2 lg:w-[40%] relative">
-        <Image src={"/images/login.webp"} fill={true} quality={100}></Image>
+        <svg
+          className="scale-[3] translate-x-96"
+          viewBox="0 0 960 540"
+          width="960"
+          height="540"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        >
+          <path
+            d="M469 0L462.8 22.5C456.7 45 444.3 90 419 135C393.7 180 355.3 225 356.7 270C358 315 399 360 411.8 405C424.7 450 409.3 495 401.7 517.5L394 540L0 540L0 517.5C0 495 0 450 0 405C0 360 0 315 0 270C0 225 0 180 0 135C0 90 0 45 0 22.5L0 0Z"
+          ></path>
+        </svg>
       </div>
       <div className="w-full md:w-1/2 lg:w-[60%] flex flex-col justify-center px-12 md:px-24 lg:px-32 gap-8">
         <h1 className="font-bold text-xl">Masuk dengan akun</h1>
@@ -92,8 +103,12 @@ const login = () => {
           </div>
         </div>
         <div className="flex flex-col items-center gap-1">
-            <p className="text-[#9A9A9A] font-medium text-xs">Belum mempunyai akun?</p>
-            <a href="/register" className="text-xs text-[#4CACBC] underline">Daftar disini</a>
+          <p className="text-[#9A9A9A] font-medium text-xs">
+            Belum mempunyai akun?
+          </p>
+          <a href="/register" className="text-xs text-[#4CACBC] underline">
+            Daftar disini
+          </a>
         </div>
       </div>
     </div>

@@ -16,6 +16,10 @@ body {
   font-family: var(--font-poppins); /* Use font variable from layout */
 }
 
+sup {
+  @apply text-[#FF4A4A]
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

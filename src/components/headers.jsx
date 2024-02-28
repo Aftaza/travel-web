@@ -5,8 +5,18 @@ import { useState } from "react";
 
 const Headers = () => {
   const [open, setOpen] = useState(false);
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if(window.scrollY >= 90) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+  window.addEventListener('scroll',changeColor)
+
   return (
-    <nav className="bg-[#0E0A0AD1] flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40">
+    <nav className={`hover:bg-[#0E0A0AD1] ${color ? 'bg-color-black' : 'bg-transparent'} flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}>
       <div className="flex flex-row items-center">
         <div className="bg-[#ffffff] rounded-full aspect-square w-10"></div>
         <h1 className="text-xl">Travel</h1>
