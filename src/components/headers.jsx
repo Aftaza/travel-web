@@ -19,11 +19,11 @@ const Headers = () => {
   return (
     <nav
       className={`hover:bg-[#0E0A0AD1] ${
-        color ? "bg-color-black" : "bg-transparent"
+        color ? "bg-[#0E0A0AD1]" : "bg-transparent"
       } flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
     >
       <div>
-        <Image src="/logo.png" alt="Logo" width={60} height={30} quality={100} objectFit="contain"/>
+        <Image src="/logoWhite.png" alt="Logo" width={80} height={50} quality={100} objectFit="contain"/>
       </div>
       <div className="md:flex flex-row gap-3 hidden">
         <Link href={"/"}>Beranda</Link>
@@ -44,7 +44,7 @@ const Headers = () => {
         =
       </button>
       {open && (
-        <nav className="bg-[#0E0A0AD1] fixed inset-x-0 top-14 h-fit z-40 drop-shadow-lg p-2 flex flex-col gap-3">
+        <nav className="bg-[#0E0A0AD1] fixed inset-x-0 top-12 h-fit z-40 drop-shadow-lg p-2 flex flex-col gap-3">
           <Link href={"/"}>Beranda</Link>
           <Link href={"/"}>Paket</Link>
           <Link href={"/"}>Destinasi</Link>

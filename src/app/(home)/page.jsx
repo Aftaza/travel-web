@@ -223,9 +223,9 @@ export default function Home() {
                     <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
                       Lihat detail
                     </button>
-                    <button className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center">
+                    <Link href="/booking/isiform" className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center">
                       Pesan
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

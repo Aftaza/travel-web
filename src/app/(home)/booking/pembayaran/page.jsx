@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
             <p>Jumlah transfer: Rp. 300.000</p>
           </div>
         </div>
-        <button className="bg-[#1A3FFF] py-2 px-6 w-fit font-semibold text-color-white rounded-lg self-center my-4">Kembali ke Beranda</button>
+        <Link href="/" className="bg-[#1A3FFF] py-2 px-6 w-fit font-semibold text-color-white rounded-lg self-center my-4">Kembali ke Beranda</Link>
       </section>
       <aside className="py-4 md:py-0">
         <div className="flex flex-col gap-2 font-bold bg-color-white rounded-md py-2 px-4">

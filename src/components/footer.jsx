@@ -7,8 +7,7 @@ const Footer = () => {
     <footer className="flex flex-col bg-color-primary">
       <div className="flex flex-col md:flex-row justify-center gap-12 p-8">
         <div className="flex flex-col gap-2 w-[10%] items-center self-end md:self-start">
-          <Image src="/logo.png" width={80} height={80} alt="Logo" quality={100}/>
-          <p className="font-bold">Explorin</p>
+          <Image src="/logoBlue.png" width={80} height={80} alt="Logo" quality={100}/>
         </div>
         <div className="flex flex-col gap-2 w-[15%]">
           <h1 className="font-bold text-xl">Info</h1>
@@ -36,7 +35,7 @@ const Footer = () => {
           </div>
       </div>
       <div className="flex p-2 justify-center bg-color-fourty font-semibold text-color-white text-center">
-        <p>Copyright</p>
+        <p>Copyright 2024 Travel All rights Reserved</p>
       </div>
     </footer>
   );

@@ -61,11 +61,40 @@ export default function IsiForm() {
                 <label htmlFor="Nama">
                   No. Handphone<sup>*</sup>
                 </label>
-                <div className="flex outline outline-1 h-10 rounded-md focus:outline-none active:outline-none">
-                  <select name="codearea" className="w-[30%]">
-                    <option value="IDN">+62</option>
+                <div className="flex outline outline-1 h-10 rounded-md focus:outline-none active:outline-none items-center gap-1 pl-2">
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_410_2)">
+                        <path
+                          d="M32 5H4C2.93913 5 1.92172 5.42143 1.17157 6.17157C0.421427 6.92172 0 7.93913 0 9L0 18H36V9C36 7.93913 35.5786 6.92172 34.8284 6.17157C34.0783 5.42143 33.0609 5 32 5Z"
+                          fill="#DC1F26"
+                        />
+                        <path
+                          d="M36 27C36 28.0609 35.5786 29.0783 34.8284 29.8284C34.0783 30.5786 33.0609 31 32 31H4C2.93913 31 1.92172 30.5786 1.17157 29.8284C0.421427 29.0783 0 28.0609 0 27V18H36V27Z"
+                          fill="#EEEEEE"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_410_2">
+                          <rect width="36" height="36" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <select name="codearea" className="w-[30%] focus:outline-none active:outline-none">
+                    <option value="IDN"> +62</option>
                   </select>
-                  <input type="text" className="w-[70%] pl-2 text-sm font-medium" placeholder="8xxxxxxx" />
+                  <input
+                    type="text"
+                    className="w-[70%] pl-2 text-sm font-medium"
+                    placeholder="8xxxxxxx"
+                  />
                 </div>
                 <sub className="leading-snug text-xs font-medium">
                   Contoh: +6281237849 untuk negara (+62) dan No. Handphone
@@ -77,7 +106,11 @@ export default function IsiForm() {
                   Email<sup>*</sup>
                 </label>
                 <div className="flex outline outline-1 h-10 rounded-md">
-                  <input type="text" className="w-full pl-2 text-sm font-medium" placeholder="example@gmail.com"/>
+                  <input
+                    type="text"
+                    className="w-full pl-2 text-sm font-medium"
+                    placeholder="example@gmail.com"
+                  />
                 </div>
                 <sub className=" leading-snug text-xs font-medium">
                   Contoh: email@gmail.com
@@ -110,7 +143,15 @@ export default function IsiForm() {
         </section>
         <section className="p-2 flex flex-col gap-1 font-bold">
           <h1>Detail Lokasi</h1>
-          <form action="" className="bg-color-white h-32 rounded-md"></form>
+          <div className="bg-color-white p-4 rounded-md">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.36012390921!2d112.9324125566914!3d-7.9424929432158695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt%20Bromo!5e0!3m2!1sen!2sid!4v1709263189451!5m2!1sen!2sid"
+              className="w-full aspect-square flex-none"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </section>
         <section className="p-2 flex flex-col gap-1 font-bold">
           <h1>Rincian Harga</h1>
@@ -130,6 +171,12 @@ export default function IsiForm() {
               <h1>Rp. 3.315.000</h1>
             </div>
           </form>
+          <Link
+            href="/booking/pembayaran"
+            className="my-4 self-end px-3 py-2 rounded-3xl bg-[#FF7A00] text-color-white w-fit font-medium"
+          >
+            Lanjut ke Pembayaran
+          </Link>
         </section>
       </aside>
       <aside className="py-4 md:py-0">
