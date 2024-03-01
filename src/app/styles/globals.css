@@ -17,7 +17,7 @@ body {
 }
 
 sup {
-  @apply text-[#FF4A4A]
+  @apply text-[#FF4A4A];
 }
 
 @layer utilities {
@@ -37,3 +37,4 @@ sup {
 .scroll-snap-type-mandatory {
   scroll-snap-type: x mandatory;
 }
+

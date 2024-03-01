@@ -1,53 +1,42 @@
+import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-[#F6E3C5]">
-      <div className="flex flex-col gap-4 md:flex-row justify-evenly py-8 px-8 md:px-32">
-        <div className="flex flex-col self-end">
-          <div className="bg-[#fff] w-12 h-12 rounded-full"></div>
-          <p className="font-semibold">Travel</p>
+    <footer className="flex flex-col bg-color-primary">
+      <div className="flex flex-col md:flex-row justify-center gap-12 p-8">
+        <div className="flex flex-col gap-2 w-[10%] items-center self-end md:self-start">
+          <Image src="/logo.png" width={80} height={80} alt="Logo" quality={100}/>
+          <p className="font-bold">Explorin</p>
         </div>
-        <div className="flex flex-col font-bold w-fit">
-          <h1 className="text-2xl">Info</h1>
-          <Link href="/" className="text-[#636363]">
-            Tentang Kami
-          </Link>
-          <Link href="/" className="text-[#636363]">
-            Testimonial
-          </Link>
-          <Link href="/" className="text-[#636363]">
-            Kontak
-          </Link>
+        <div className="flex flex-col gap-2 w-[15%]">
+          <h1 className="font-bold text-xl">Info</h1>
+          <div className="flex flex-col font-medium text-[#808080]">
+            <Link href="">Tentang Kami</Link>
+            <Link href="">Testimonial</Link>
+            <Link href="">Kontak</Link>
+          </div>
         </div>
-        <div className="flex flex-col font-bold w-fit self-end">
-          <h1 className="text-2xl">Perusahaan</h1>
-          <Link href="/" className="text-[#636363]">
-            Syarat & Ketentuan
-          </Link>
-          <Link href="/" className="text-[#636363]">
-            Kebijakan Privasi
-          </Link>
-          <Link href="/" className="text-[#636363]">
-            Bantuan Pelayanan
-          </Link>
+        <div className="flex flex-col gap-2 md:self-start self-end w-fit md:w-[15%]">
+          <h1 className="font-bold text-xl">Perusahaan</h1>
+          <div className="flex flex-col font-medium text-[#808080]">
+            <Link href="">Syarat & Ketentuan</Link>
+            <Link href="">Kebijakan Privasi</Link>
+            <Link href="">Bantuan Pelayanan</Link>
+          </div>
         </div>
-        <div className="flex flex-col font-bold w-fit pr-24">
-          <h1 className="text-2xl">Kontak</h1>
-          <Link href="/" className="text-[#636363]">
-            Jl. Tunjungan Siola, Surabaya, Jawa Timur, Indonesia
-          </Link>
-          <Link href="/" className="text-[#636363]">
-          (031)9893748
-          </Link>
-          <Link href="/" className="text-[#636363]">
-            contact@gmail.com
-          </Link>
-        </div>
+        <div className="flex flex-col gap-2 w-fit md:w-[15%]">
+            <h1 className="font-bold text-xl">Kontak</h1>
+            <div className="flex flex-col font-medium text-[#808080]">
+              <Link href="">Jl. Tunjungan Siola, Surabaya, Jawa Timur, Indonesia</Link>
+              <Link href="">Kebijakan Privasi</Link>
+              <Link href="">Bantuan Pelayanan</Link>
+            </div>
+          </div>
       </div>
-      <div className="bg-[#4CACBC] flex justify-center w-full p-2 text-[#ffffff] font-semibold">
-        Copyright 2024 Travel All rights Reserved
+      <div className="flex p-2 justify-center bg-color-fourty font-semibold text-color-white text-center">
+        <p>Copyright</p>
       </div>
     </footer>
   );

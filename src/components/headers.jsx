@@ -1,25 +1,29 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const Headers = () => {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
   const changeColor = () => {
-    if(window.scrollY >= 90) {
-      setColor(true)
+    if (window.scrollY >= 90) {
+      setColor(true);
     } else {
-      setColor(false)
+      setColor(false);
     }
-  }
-  window.addEventListener('scroll',changeColor)
+  };
+  window.addEventListener("scroll", changeColor);
 
   return (
-    <nav className={`hover:bg-[#0E0A0AD1] ${color ? 'bg-color-black' : 'bg-transparent'} flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}>
-      <div className="flex flex-row items-center">
-        <div className="bg-[#ffffff] rounded-full aspect-square w-10"></div>
-        <h1 className="text-xl">Travel</h1>
+    <nav
+      className={`hover:bg-[#0E0A0AD1] ${
+        color ? "bg-color-black" : "bg-transparent"
+      } flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
+    >
+      <div>
+        <Image src="/logo.png" alt="Logo" width={60} height={30} quality={100} objectFit="contain"/>
       </div>
       <div className="md:flex flex-row gap-3 hidden">
         <Link href={"/"}>Beranda</Link>
@@ -29,7 +33,7 @@ const Headers = () => {
       </div>
       <Link
         href={"/login"}
-        className="rounded-2xl py-1 px-4 bg-color-thirdy hidden md:flex"
+        className="rounded-2xl py-1 px-4 bg-color-thirdy hidden md:flex drop-shadow-xl"
       >
         Login
       </Link>
@@ -41,16 +45,16 @@ const Headers = () => {
       </button>
       {open && (
         <nav className="bg-[#0E0A0AD1] fixed inset-x-0 top-14 h-fit z-40 drop-shadow-lg p-2 flex flex-col gap-3">
-            <Link href={"/"}>Beranda</Link>
-            <Link href={"/"}>Paket</Link>
-            <Link href={"/"}>Destinasi</Link>
-            <Link href={"/"}>Kontak</Link>
-            <Link
-        href={"/login"}
-        className="rounded-2xl py-1 px-4 bg-color-thirdy w-fit"
-      >
-        Login
-      </Link>
+          <Link href={"/"}>Beranda</Link>
+          <Link href={"/"}>Paket</Link>
+          <Link href={"/"}>Destinasi</Link>
+          <Link href={"/"}>Kontak</Link>
+          <Link
+            href={"/login"}
+            className="rounded-2xl py-1 px-4 bg-color-thirdy w-fit"
+          >
+            Login
+          </Link>
         </nav>
       )}
     </nav>
