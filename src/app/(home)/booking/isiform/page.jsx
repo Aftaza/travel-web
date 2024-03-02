@@ -37,7 +37,7 @@ export default function IsiForm() {
         <section className="flex flex-col gap-2">
           <h1 className="font-bold">Data pemesanan</h1>
           <form className="bg-color-white flex flex-col py-2 px-4 rounded-md font-bold gap-4">
-            <div className="flex justify-between py-2">
+            <div className="flex justify-between py-4 border-b">
               <h1>Data pemesanan (Untuk voucher)</h1>
               <Link href="" className="text-[#1A3FFF]">
                 Simpan
@@ -181,7 +181,7 @@ export default function IsiForm() {
       </aside>
       <aside className="py-4 md:py-0">
         <div className="flex flex-col gap-2 font-bold bg-color-white rounded-md py-2 px-4">
-          <div className="py-2 border-b-2 flex gap-2 items-center">
+          <div className="py-2 border-b flex gap-2 items-center">
             <svg
               width="36"
               height="36"

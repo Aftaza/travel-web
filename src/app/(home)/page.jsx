@@ -764,6 +764,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shadi9987/video/7332684525509610785" data-video-id="7332684525509610785" style={{minWidth: "450", minHeight: "550"}} > <section> <a target="_blank" title="@shadi9987" href="https://www.tiktok.com/@shadi9987?refer=embed">@shadi9987</a> Part 1  <a title="animation" target="_blank" href="https://www.tiktok.com/tag/animation?refer=embed">#animation</a> <a title="cartoon" target="_blank" href="https://www.tiktok.com/tag/cartoon?refer=embed">#cartoon</a> <a target="_blank" title="♬ original sound - shadi" href="https://www.tiktok.com/music/original-sound-7332684651553295137?refer=embed">♬ original sound - shadi</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     </main>
   );
 }
