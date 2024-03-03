@@ -21,7 +21,7 @@ module.exports = {
                 fourty: '#4CACBC',
                 white: '#ffffff',
                 black: '#000000',
-              }
+            }
         }
     },
     plugins: [],
