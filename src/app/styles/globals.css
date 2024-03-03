@@ -37,3 +37,7 @@ sup {
 .scroll-snap-type-mandatory {
   scroll-snap-type: x mandatory;
 }
+
+.font-rakkas {
+    font-family: var(--font-rakkas);
+}
