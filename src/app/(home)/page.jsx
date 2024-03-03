@@ -20,6 +20,36 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <section className="h-[100vh] relative pt-16 px-12 flex flex-col overflow-hidden drop-shadow-lg">
+        <button
+          onClick={() => open("www.youtube.com")}
+          className="py-2 px-4 rounded-full bg-color-black bg-opacity-50 absolute right-4 bottom-4 group flex gap-2 transition ease-in-out scale-x-95 text-color-white drop-shadow-lg"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_481_70)">
+              <rect x="7" y="6" width="10" height="10" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 4C12.855 4 13.732 4.022 14.582 4.058L15.586 4.106L16.547 4.163L17.447 4.224L18.269 4.288C19.161 4.35628 20.0004 4.73695 20.6395 5.36304C21.2786 5.98913 21.6764 6.82054 21.763 7.711L21.803 8.136L21.878 9.046C21.948 9.989 22 11.017 22 12C22 12.983 21.948 14.011 21.878 14.954L21.803 15.864C21.79 16.01 21.777 16.151 21.763 16.289C21.6764 17.1796 21.2784 18.0112 20.6391 18.6373C19.9999 19.2634 19.1602 19.6439 18.268 19.712L17.448 19.775L16.548 19.837L15.586 19.894L14.582 19.942C13.7218 19.9794 12.861 19.9987 12 20C11.139 19.9987 10.2782 19.9794 9.418 19.942L8.414 19.894L7.453 19.837L6.553 19.775L5.731 19.712C4.83895 19.6437 3.99955 19.2631 3.36047 18.637C2.72139 18.0109 2.32357 17.1795 2.237 16.289L2.197 15.864L2.122 14.954C2.04554 13.9711 2.00484 12.9858 2 12C2 11.017 2.052 9.989 2.122 9.046L2.197 8.136C2.21 7.99 2.223 7.849 2.237 7.711C2.32354 6.8207 2.72122 5.98942 3.36009 5.36334C3.99897 4.73727 4.83813 4.3565 5.73 4.288L6.551 4.224L7.451 4.163L8.413 4.106L9.417 4.058C10.2775 4.02063 11.1387 4.0013 12 4ZM10 9.575V14.425C10 14.887 10.5 15.175 10.9 14.945L15.1 12.52C15.1914 12.4674 15.2673 12.3916 15.3201 12.3003C15.3729 12.209 15.4007 12.1055 15.4007 12C15.4007 11.8945 15.3729 11.791 15.3201 11.6997C15.2673 11.6084 15.1914 11.5326 15.1 11.48L10.9 9.056C10.8088 9.00332 10.7053 8.9756 10.5999 8.97562C10.4945 8.97563 10.3911 9.00339 10.2998 9.0561C10.2086 9.1088 10.1329 9.1846 10.0802 9.27587C10.0276 9.36713 9.99993 9.47065 10 9.576V9.575Z"
+                fill="#DD3200"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_481_70">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>{" "}
+          <p className="hidden group-hover:flex transition ease-in-out">
+            Sumber: Kemenparekraf
+          </p>
+        </button>
         <video
           autoPlay
           loop
@@ -187,7 +217,10 @@ export default function Home() {
                 />
               </svg>
             </button>
-            <div ref={containerRef} className="flex gap-4 overflow-scroll scroll-snap-type-mandatory">
+            <div
+              ref={containerRef}
+              className="flex gap-4 overflow-scroll scroll-snap-type-mandatory"
+            >
               <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
                 <div className="w-[40%] relative flex-none">
                   <Image
@@ -223,7 +256,10 @@ export default function Home() {
                     <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
                       Lihat detail
                     </button>
-                    <Link href="/booking/isiform" className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center">
+                    <Link
+                      href="/booking/isiform"
+                      className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center"
+                    >
                       Pesan
                     </Link>
                   </div>
@@ -232,26 +268,26 @@ export default function Home() {
               <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
                 <div className="w-[40%] relative flex-none">
                   <Image
-                    src="/images/bromo.jpg"
+                    src="/images/airterjun.png"
                     fill={true}
-                    alt="Bromo"
+                    alt="Air Terjun"
                     style={{ objectFit: "cover" }}
                   />
                 </div>
                 <div className="flex flex-col gap-4 p-3">
                   <div className="flex flex-col">
                     <h1 className="text-lg md:text-xl font-semibold md:whitespace-nowrap">
-                      Gunung Bromo, Jawa Timur
+                      Air Terjun Tumpak Sewu
                     </h1>
                     <p className="font-light md:text-base text-sm">Indonesia</p>
                   </div>
                   <div className="flex flex-col">
                     <div className="text-sm md:text-base font-semibold flex gap-2">
-                      <h2 className="line-through">Rp. 1.200.000</h2>{" "}
-                      <p className="text-[#FF6341]">15%</p>
+                      <h2 className="line-through">Rp. 1.000.000</h2>{" "}
+                      <p className="text-[#FF6341]">25%</p>
                     </div>
                     <h1 className="text-base md:text-lg font-semibold">
-                      Rp. 800.000
+                      Rp. 750.000
                     </h1>
                   </div>
                   <p className="text-xs md:text-sm font-light">
@@ -452,12 +488,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <span className="flex flex-col gap-8 py-8 px-12 text-color-white bg-color-thirdy">
+      <span className="flex flex-col gap-8 py-8 px-12 text-color-white bg-color-thirdy w-svw">
         <h1 className="font-semibold text-2xl md:text-4xl leading-none">
           Partner Tour and Travel
         </h1>
-        <Marquee className="flex gap-22">
-          <div className="flex justify-between gap-32 overflow-scroll">
+        <Marquee className="flex justify-between gap-22 md:gap-0">
+          <div className="flex justify-between gap-32">
             <div className="w-32 flex-none flex flex-col items-center">
               <svg
                 width="150"
@@ -563,17 +599,20 @@ export default function Home() {
         </div>
         <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
           <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-72 transition duration-700 ease-in-out">
+            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
               Gunung
             </p>
             <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
               Gunung
             </p>
+            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+            Jawa Timur adalah surga bagi para penggemar alam dengan gunung-gunung menarik seperti Bromo dengan padang pasirnya yang luas, Semeru yang menantang, Ijen dengan blue flame-nya yang spektakuler, dan Arjuno-Welirang dengan pemandangan alam yang menawan. Semua ini menjadikan Jawa Timur destinasi impian bagi para pendaki!
+            </p>
             <Image
               src="/images/bromo.jpg"
               fill={true}
               alt="Bromo"
-              className="group-hover:scale-110 transition duration-700 ease-in-out"
+              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
             />
           </div>
           <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
@@ -583,25 +622,31 @@ export default function Home() {
             <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
               Air Terjun
             </p>
+            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+            Jawa Timur juga dikenal dengan keindahan air terjunnya yang menakjubkan. Mulai dari Air Terjun Madakaripura yang megah dengan ketinggian yang mengagumkan dan legenda yang mengelilinginya, hingga Air Terjun Tumpak Sewu yang memukau dengan aliran airnya yang lembut dan panorama alam sekitarnya yang memesona. Ada juga Air Terjun Coban Rondo yang cantik dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.
+            </p>
             <Image
               src="/images/airterjun.png"
               fill={true}
               alt="Air Terjun"
-              className="group-hover:scale-110 transition duration-700 ease-in-out"
+              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
             />
           </div>
           <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-72 transition duration-700 ease-in-out">
+            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
               Pantai
             </p>
             <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
               Pantai
             </p>
+            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+            Jawa Timur memiliki pantai-pantai menakjubkan seperti Pantai Malang Selatan dengan pasir putih halusnya, Pantai Papuma dengan tebing karang spektakuler, Pantai Banyuwangi yang berpasir emas, dan Pantai Pasir Putih Situbondo yang luas. Surga bagi penggemar pantai!
+            </p>
             <Image
               src="/images/pantai.jpg"
               fill={true}
               alt="Pantai"
-              className="group-hover:scale-110 transition duration-700 ease-in-out"
+              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
             />
           </div>
         </div>
@@ -764,7 +809,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@shadi9987/video/7332684525509610785" data-video-id="7332684525509610785" style={{minWidth: "450", minHeight: "550"}} > <section> <a target="_blank" title="@shadi9987" href="https://www.tiktok.com/@shadi9987?refer=embed">@shadi9987</a> Part 1  <a title="animation" target="_blank" href="https://www.tiktok.com/tag/animation?refer=embed">#animation</a> <a title="cartoon" target="_blank" href="https://www.tiktok.com/tag/cartoon?refer=embed">#cartoon</a> <a target="_blank" title="♬ original sound - shadi" href="https://www.tiktok.com/music/original-sound-7332684651553295137?refer=embed">♬ original sound - shadi</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     </main>
   );
 }
