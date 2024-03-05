@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className="relative h-[512vh] flex flex-col gap-24 w-full bg-gradient-to-t from-color-black pt-16 overflow-hidden">
       <Image
-        src="/images/bgAbout.png"
+        src="https://serve.aftaza.my.id/public/images/bgAbout.png"
         fill
         alt="Background"
         className="-z-10 absolute object-cover md:object-auto"
