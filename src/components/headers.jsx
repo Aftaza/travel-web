@@ -1,21 +1,37 @@
-"use client";
-import React from "react";
+'use client'
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 
 const Headers = () => {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-    window.addEventListener("scroll", changeColor);    
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 90) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    const throttledHandleScroll = () => {
+      if (!throttledHandleScroll.running) {
+        throttledHandleScroll.running = true;
+        requestAnimationFrame(() => {
+          handleScroll();
+          throttledHandleScroll.running = false;
+        });
+      }
+    };
+
+    window.addEventListener("scroll", throttledHandleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", throttledHandleScroll);
+    };
+  }, []); // Run only once when component mounts
 
   return (
     <nav
@@ -30,7 +46,7 @@ const Headers = () => {
           width={80}
           height={50}
           quality={100}
-          objectFit="contain"
+          className="object-cover"
         />
       </div>
       <div className="md:flex flex-row gap-3 hidden">

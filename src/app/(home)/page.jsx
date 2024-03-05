@@ -1,5 +1,5 @@
 "use client";
-import { Star } from "@/components/Star";
+import { Star } from "@/components/star";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
@@ -54,7 +54,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="inset-0 absolute h-full -z-10 scale-150 object-cover"
+          className="inset-0 absolute h-full -z-10 object-cover"
         >
           <source src="/videos/bgVideo.mp4" type="video/mp4" />
         </video>
@@ -227,7 +227,7 @@ export default function Home() {
                     src="/images/bromo.jpg"
                     fill={true}
                     alt="Bromo"
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-4 p-3">
@@ -246,7 +246,7 @@ export default function Home() {
                       Rp. 800.000
                     </h1>
                   </div>
-                  <p className="text-xs md:text-sm font-light">
+                  <p className="ftext-xs md:text-sm font-light">
                     Untuk 1 orang tiket pesawat, makan siang, makan....
                   </p>
                   <p className="font-semibold md:text-base text-sm">
@@ -257,7 +257,7 @@ export default function Home() {
                       Lihat detail
                     </button>
                     <Link
-                      href="/booking/isiform"
+                      href="/booking"
                       className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center"
                     >
                       Pesan
@@ -271,7 +271,7 @@ export default function Home() {
                     src="/images/airterjun.png"
                     fill={true}
                     alt="Air Terjun"
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-4 p-3">
@@ -312,7 +312,7 @@ export default function Home() {
                     src="/images/bromo.jpg"
                     fill={true}
                     alt="Bromo"
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex flex-col gap-4 p-3">
@@ -575,79 +575,174 @@ export default function Home() {
           </div>
         </Marquee>
       </span>
-      <section className="flex flex-col p-12 gap-4 bg-color-white">
-        <div className="flex justify-between items-center">
-          <h1 className="font-bold text-2xl md:text-4xl">Kategori Tempat</h1>
-          <Link
-            href="/"
-            className="text-color-fourty font-semibold underline flex gap-1 items-center"
-          >
-            View All
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 24 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+      <section className="flex flex-col p-12 gap-8 bg-color-white">
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-2xl md:text-4xl">Kategori Tempat</h1>
+            <Link
+              href="/"
+              className="text-color-fourty font-semibold underline flex gap-1 items-center"
             >
-              <path
-                d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
-                fill="#4CACBC"
+              View All
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
+                  fill="#4CACBC"
+                />
+              </svg>
+            </Link>
+          </div>
+          <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
+            <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Gunung
+              </p>
+              <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Gunung
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Jawa Timur adalah surga bagi para penggemar alam dengan
+                gunung-gunung menarik seperti Bromo dengan padang pasirnya yang
+                luas, Semeru yang menantang, Ijen dengan blue flame-nya yang
+                spektakuler, dan Arjuno-Welirang dengan pemandangan alam yang
+                menawan. Semua ini menjadikan Jawa Timur destinasi impian bagi
+                para pendaki!
+              </p>
+              <Image
+                src="/images/bromo.jpg"
+                fill={true}
+                alt="Bromo"
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
               />
-            </svg>
-          </Link>
+            </div>
+            <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Air Terjun
+              </p>
+              <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Air Terjun
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Jawa Timur juga dikenal dengan keindahan air terjunnya yang
+                menakjubkan. Mulai dari Air Terjun Madakaripura yang megah
+                dengan ketinggian yang mengagumkan dan legenda yang
+                mengelilinginya, hingga Air Terjun Tumpak Sewu yang memukau
+                dengan aliran airnya yang lembut dan panorama alam sekitarnya
+                yang memesona. Ada juga Air Terjun Coban Rondo yang cantik
+                dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.
+              </p>
+              <Image
+                src="/images/airterjun.png"
+                fill={true}
+                alt="Air Terjun"
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
+              />
+            </div>
+            <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Pantai
+              </p>
+              <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Pantai
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Jawa Timur memiliki pantai-pantai menakjubkan seperti Pantai
+                Malang Selatan dengan pasir putih halusnya, Pantai Papuma dengan
+                tebing karang spektakuler, Pantai Banyuwangi yang berpasir emas,
+                dan Pantai Pasir Putih Situbondo yang luas. Surga bagi penggemar
+                pantai!
+              </p>
+              <Image
+                src="/images/pantai.jpg"
+                fill={true}
+                alt="Pantai"
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
+              />
+            </div>
+          </div>
         </div>
-        <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
-          <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Gunung
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Gunung
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur adalah surga bagi para penggemar alam dengan gunung-gunung menarik seperti Bromo dengan padang pasirnya yang luas, Semeru yang menantang, Ijen dengan blue flame-nya yang spektakuler, dan Arjuno-Welirang dengan pemandangan alam yang menawan. Semua ini menjadikan Jawa Timur destinasi impian bagi para pendaki!
-            </p>
-            <Image
-              src="/images/bromo.jpg"
-              fill={true}
-              alt="Bromo"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-2xl md:text-4xl">Jelajahi Wisata</h1>
+            <Link
+              href="/"
+              className="text-color-fourty font-semibold underline flex gap-1 items-center"
+            >
+              View All
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
+                  fill="#4CACBC"
+                />
+              </svg>
+            </Link>
           </div>
-          <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Air Terjun
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Air Terjun
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur juga dikenal dengan keindahan air terjunnya yang menakjubkan. Mulai dari Air Terjun Madakaripura yang megah dengan ketinggian yang mengagumkan dan legenda yang mengelilinginya, hingga Air Terjun Tumpak Sewu yang memukau dengan aliran airnya yang lembut dan panorama alam sekitarnya yang memesona. Ada juga Air Terjun Coban Rondo yang cantik dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.
-            </p>
-            <Image
-              src="/images/airterjun.png"
-              fill={true}
-              alt="Air Terjun"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
-          </div>
-          <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Pantai
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Pantai
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur memiliki pantai-pantai menakjubkan seperti Pantai Malang Selatan dengan pasir putih halusnya, Pantai Papuma dengan tebing karang spektakuler, Pantai Banyuwangi yang berpasir emas, dan Pantai Pasir Putih Situbondo yang luas. Surga bagi penggemar pantai!
-            </p>
-            <Image
-              src="/images/pantai.jpg"
-              fill={true}
-              alt="Pantai"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
+          <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
+            <button onClick={() => open("details/explore/bromo")} className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Bromo
+              </p>
+              <p className="absolute -translate-x-96 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Jelajahi Bromo, yuk!
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Ayo Jelajahi Bromo!
+              </p>
+              <Image
+                src="/images/bromo.jpg"
+                fill={true}
+                alt="Bromo"
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
+              />
+            </button>
+            <button onClick={() => open("details/explore/candipenataran")} className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Candi Penataran
+              </p>
+              <p className="absolute -translate-x-96 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Ayo Jelajahi Candi Penataran
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Ayo Jelajahi Candi Penataran
+              </p>
+              <Image
+                src="/images/candipenataran.png"
+                fill={true}
+                alt="Air Terjun"
+                quality={100}
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out object-cover"
+              />
+            </button>
+            <button onClick={() => open('/details/explore/trowulan')} className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
+              <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
+                Trowulan
+              </p>
+              <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
+                Jelajahi Situs Trowulan, yuk!
+              </p>
+              <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
+                Klik untuk jelajahi secara virtual
+              </p>
+              <Image
+                src="/images/trowulan.jpg"
+                fill={true}
+                alt="Pantai"
+                quality={100}
+                className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out object-cover"
+              />
+            </button>
           </div>
         </div>
       </section>
@@ -665,7 +760,7 @@ export default function Home() {
                   src="/images/ava.png"
                   fill
                   alt="Putri"
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
               <div className="w-[70%] flex flex-col">
@@ -695,7 +790,7 @@ export default function Home() {
                   src="/images/ava.png"
                   fill
                   alt="Putri"
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
               <div className="w-[70%] flex flex-col">
@@ -725,7 +820,7 @@ export default function Home() {
                   src="/images/ava.png"
                   fill
                   alt="Putri"
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
               <div className="w-[70%] flex flex-col">
@@ -755,7 +850,7 @@ export default function Home() {
                   src="/images/ava.png"
                   fill
                   alt="Putri"
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
               <div className="w-[70%] flex flex-col">
@@ -785,7 +880,7 @@ export default function Home() {
                   src="/images/ava.png"
                   fill
                   alt="Putri"
-                  style={{ objectFit: "cover" }}
+                  className="object-cover"
                 />
               </div>
               <div className="w-[70%] flex flex-col">
