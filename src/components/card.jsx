@@ -145,7 +145,7 @@ export const KategoriAirTerjun = () => {
         mengagumkan dan legenda yang mengelilinginya, hingga Air Terjun Tumpak
         Sewu yang memukau dengan aliran airnya yang lembut dan panorama alam
         sekitarnya yang memesona. Ada juga Air Terjun Coban Rondo yang cantik
-        dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.&quote;
+        dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.&quot;
       </p>
       <Image
         src="/images/airterjun.png"
@@ -336,7 +336,7 @@ export const TerpopulerPenataran = () => {
 export const TestiCard = () => {
   return (
     <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-      <h1 className="absolute -top-2 right-4 text-6xl font-bold">&quote;</h1>
+      <h1 className="absolute -top-2 right-4 text-6xl font-bold">&quot;</h1>
       <div className="flex flex-row gap-2 w-full items-center">
         <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
           <Image
