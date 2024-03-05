@@ -90,7 +90,7 @@ export default function bookingdetails() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col md:flex-row gap-2 h-24 border-b-[0.5]">
               <div className="md:w-1/4 rounded-lg bg-color-fourty relative overflow-hidden">
-                <Image src="/images/bromo.jpg" fill alt="Bromo"/>
+                <Image src="https://serve.aftaza.my.id/public/images/bromo.jpg" fill alt="Bromo"/>
               </div>
               <div className="flex flex-col justify-between gap-2">
                 <h2 className="font-semibold text-lg">Paket Gunung Bromo</h2>

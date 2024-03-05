@@ -12,7 +12,7 @@ export const CardTravel = () => {
         <Star className="w-4 -mt-[2px]" />
       </p>
       <Image
-        src="/images/candipenataran.png"
+        src="https://serve.aftaza.my.id/public/images/candipenataran.png"
         fill
         alt="Candi Penataran"
         className="object-cover -z-10"
@@ -121,7 +121,7 @@ export const KategoriGunung = () => {
         menjadikan Jawa Timur destinasi impian bagi para pendaki!
       </p>
       <Image
-        src="/images/bromo.jpg"
+        src="https://serve.aftaza.my.id/public/images/bromo.jpg"
         fill={true}
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
@@ -148,7 +148,7 @@ export const KategoriAirTerjun = () => {
         dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.&quot;
       </p>
       <Image
-        src="/images/airterjun.png"
+        src="https://serve.aftaza.my.id/public/images/airterjun.png"
         fill={true}
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
@@ -173,7 +173,7 @@ export const KategoriPantai = () => {
         Putih Situbondo yang luas. Surga bagi penggemar pantai!
       </p>
       <Image
-        src="/images/pantai.jpg"
+        src="https://serve.aftaza.my.id/public/images/pantai.jpg"
         fill={true}
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
@@ -187,7 +187,7 @@ export const PromoLiburanBromo = () => {
     <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
       <div className="w-[40%] relative flex-none">
         <Image
-          src="/images/bromo.jpg"
+          src="https://serve.aftaza.my.id/public/images/bromo.jpg"
           fill={true}
           alt="Bromo"
           className="object-cover"
@@ -243,7 +243,7 @@ export const JelajahBromo = () => {
         Yuk jelajahi Wisata Gunung Bromo lewat sensasi Virtual Tour!
       </p>
       <Image
-        src="/images/bromo.jpg"
+        src="https://serve.aftaza.my.id/public/images/bromo.jpg"
         fill={true}
         alt="Bromo"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
@@ -266,7 +266,7 @@ export const JelajahPenataran = () => {
         Yuk jelajahi Wisata Candi Penataran lewat sensasi Virtual Tour!
       </p>
       <Image
-        src="/images/candipenataran.png"
+        src="https://serve.aftaza.my.id/public/images/candipenataran.png"
         quality={100}
         fill={true}
         alt="Candi Penataran"
@@ -290,7 +290,7 @@ export const JelajahTrowulan = () => {
         Yuk kunjungi situs Trowulan lewat sensasi Virtual Tour!
       </p>
       <Image
-        src="/images/trowulan.jpg"
+        src="https://serve.aftaza.my.id/public/images/trowulan.jpg"
         fill={true}
         alt="Situs Trowulan"
         quality={100}
@@ -308,7 +308,7 @@ export const TerpopulerPenataran = () => {
         <Star className="w-4 -mt-[2px]" />
       </p>
       <Image
-        src="/images/candipenataran.png"
+        src="https://serve.aftaza.my.id/public/images/candipenataran.png"
         fill
         alt="Candi Penataran"
         className="object-cover -z-10"
@@ -340,7 +340,7 @@ export const TestiCard = () => {
       <div className="flex flex-row gap-2 w-full items-center">
         <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
           <Image
-            src="/images/ava.png"
+            src="https://serve.aftaza.my.id/public/images/ava.png"
             fill
             alt="Putri"
             className="object-cover"

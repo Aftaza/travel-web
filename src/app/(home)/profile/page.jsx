@@ -66,7 +66,7 @@ export default function Profile() {
           </div>
         )}
         <Image
-          src="/images/bromo.jpg"
+          src="https://serve.aftaza.my.id/public/images/bromo.jpg"
           fill
           alt="Background"
           quality={100}

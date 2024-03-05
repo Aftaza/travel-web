@@ -7,7 +7,7 @@ const SearchPage = () => {
     <main className="flex flex-col">
       <section className="h-96 relative grid place-content-center">
         <Image
-          src="/images/bromo.jpg"
+          src="https://serve.aftaza.my.id/public/images/bromo.jpg"
           fill
           quality={100}
           alt="Background"
