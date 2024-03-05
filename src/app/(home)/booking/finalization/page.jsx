@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-export default function bookingdetails() {
+export default function BookingFinalize() {
   const [submit, setSubmit] = useState(false);
   return (
     <main className="flex flex-col pt-12">

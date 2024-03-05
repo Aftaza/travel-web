@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function bookingdetails() {
+export default function BookingDetails() {
   const [counter, setCounter] = useState(0);
   const increase = () => {
     setCounter(count => count + 1);
