@@ -45,7 +45,7 @@ const Headers = () => {
           : "bg-transparent"
       } flex drop-shadow-xl flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
     >
-      <div>
+      <Link href="/">
         <Image
           src="/logoWhite.png"
           alt="Logo"
@@ -54,12 +54,12 @@ const Headers = () => {
           quality={100}
           className="object-contain"
         />
-      </div>
+      </Link>
       <div className="md:flex flex-row gap-3 hidden">
         <Link href={"/"}>Beranda</Link>
-        <Link href={"/"}>Paket</Link>
-        <Link href={"/"}>Destinasi</Link>
-        <Link href={"/"}>Kontak</Link>
+        <Link href={"/details/tour"}>Paket</Link>
+        <Link href={"/search"}>Destinasi</Link>
+        <Link href={"/about"}>Kontak</Link>
       </div>
       <Link
         href={"/login"}
@@ -76,9 +76,9 @@ const Headers = () => {
       {open && (
         <nav className="bg-[#0E0A0AD1] fixed inset-x-0 top-12 h-fit z-40 drop-shadow-lg p-2 flex flex-col gap-3">
           <Link href={"/"}>Beranda</Link>
-          <Link href={"/"}>Paket</Link>
-          <Link href={"/"}>Destinasi</Link>
-          <Link href={"/"}>Kontak</Link>
+          <Link href={"/details/tour"}>Paket</Link>
+          <Link href={"/search"}>Destinasi</Link>
+          <Link href={"/about"}>Kontak</Link>
           <Link
             href={"/login"}
             className="rounded-2xl py-1 px-4 bg-color-thirdy w-fit"

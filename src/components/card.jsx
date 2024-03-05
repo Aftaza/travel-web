@@ -28,9 +28,9 @@ export const CardTravel = () => {
         </p>
         <div className="flex justify-between gap-2 items-center">
           <h3 className="font-semibold">Rp. 900.000</h3>
-          <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
+          <Link href="/details/tour" className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
             Pesan
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@ export const MapCard = () => {
 
 export const KategoriGunung = () => {
   return (
-    <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
+    <Link href="/search" className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
       <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
         Gunung
       </p>
@@ -127,13 +127,13 @@ export const KategoriGunung = () => {
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
       />
-    </div>
+    </Link>
   );
 };
 
 export const KategoriAirTerjun = () => {
   return (
-    <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
+    <Link href="/search" className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
       <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
         Air Terjun
       </p>
@@ -154,13 +154,13 @@ export const KategoriAirTerjun = () => {
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
       />
-    </div>
+    </Link>
   );
 };
 
 export const KategoriPantai = () => {
   return (
-    <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
+    <Link href="/search" className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
       <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
         Pantai
       </p>
@@ -179,7 +179,7 @@ export const KategoriPantai = () => {
         alt="Overview"
         className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
       />
-    </div>
+    </Link>
   );
 };
 
@@ -215,9 +215,9 @@ export const PromoLiburanBromo = () => {
           Berangkat: 15-04-2023
         </p>
         <div className="flex gap-2 justify-between">
-          <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
+          <Link href="/details/wisata" className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
             Lihat detail
-          </button>
+          </Link>
           <Link
             href="/booking"
             className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center"
@@ -325,9 +325,9 @@ export const TerpopulerPenataran = () => {
         </p>
         <div className="flex justify-between gap-2 items-center">
           <h3 className="font-semibold">Rp. 900.000</h3>
-          <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
+          <Link href="/details/tour" className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
             Pesan
-          </button>
+          </Link>
         </div>
       </div>
     </div>

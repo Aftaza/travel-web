@@ -112,7 +112,7 @@ const DetailWisata = () => {
       <section className="flex flex-col px-20 justify-between gap-5">
         <h1 className="font-bold text-2xl">Detail Lokasi</h1>
         <div className="flex items-center">
-          <Image src="/pin3.svg" alt="pin" width={50} height={50} />
+          <Image src="https://serve.aftaza.my.id/public/pin3.svg" alt="pin" width={50} height={50} />
           <h3>Malang, Kota Malang, Jawa Timur, Indonesia</h3>
         </div>
         <MapCard />

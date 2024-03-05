@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="relative h-[512vh] flex flex-col gap-24 w-full bg-gradient-to-t from-color-black pt-16 overflow-hidden">
+    <main className="relative h-[512vh] flex flex-col gap-32 w-full bg-gradient-to-t from-color-black pt-16 overflow-hidden">
       <Image
         src="https://serve.aftaza.my.id/public/images/bgAbout.png"
         fill
@@ -13,13 +13,22 @@ export default function About() {
         <h1 className="text-color-white font-extrabold text-[72px] drop-shadow-xl">TIM</h1>
         <div className="w-full flex flex-col md:flex-row gap-4 justify-around">
           <div className="h-[400px] md:w-1/4 relative bg-color-fourty -translate-x-8 translate-y-8 bg-opacity-0 outline outline-color-white">
-            <div className="h-[400px] bg-color-fourty relative -translate-y-8 translate-x-8"></div>
+            <div className="h-[400px] bg-color-fourty relative -translate-y-8 translate-x-8">
+                <Image className="w-full" src="/rafi.jpg" alt="rafi photo" width={400} height={1000} />
+                <h1 className="text-center text-2xl text-color-white font-bold">Rafi</h1>
+            </div>
           </div>
           <div className="h-[400px] md:w-1/4 relative bg-color-fourty -translate-x-8 translate-y-8 md:translate-y-24 bg-opacity-0 outline outline-color-white">
-            <div className="h-[400px] bg-color-fourty relative -translate-y-8 translate-x-8"></div>
+            <div className="h-[400px] bg-color-fourty relative -translate-y-8 translate-x-8">
+                <Image className="w-full" src="/aftaku.jpg" alt="afta photo" width={400} height={1000} />
+                <h1 className="text-center text-2xl text-color-white font-bold">Afta</h1>
+            </div>
           </div>
           <div className="h-[400px] md:w-1/4 relative bg-color-fourty translate-x-8 translate-y-8 bg-opacity-0 outline outline-color-white">
-            <div className="h-[400px] bg-color-fourty relative -translate-y-8 -translate-x-8"></div>
+            <div className="h-[400px] bg-color-fourty relative -translate-y-8 -translate-x-8">
+            <Image className="w-full" src="/zul.jpg" alt="zul photo" width={400} height={1000} />
+            <h1 className="text-center text-2xl text-color-white font-bold">Zul</h1>
+            </div>
           </div>
         </div>
       </section>

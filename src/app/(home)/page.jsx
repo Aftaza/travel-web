@@ -49,7 +49,7 @@ export default function Home() {
               Bepergian ke sudut manapun di Dunia
             </h2>
           </div>
-          <button className="p-3 rounded-full bg-color-fourty text-color-white w-1/2 font-bold self-center md:self-start flex gap-2 justify-center items-center">
+          <Link href="/search" className="p-3 rounded-full bg-color-fourty text-color-white w-1/2 font-bold self-center md:self-start flex gap-2 justify-center items-center">
             Explore
             <svg
               width="36"
@@ -63,7 +63,7 @@ export default function Home() {
                 fill="white"
               />
             </svg>
-          </button>
+          </Link>
           <div className="bg-color-white rounded-2xl p-3 h-fit items-center flex md:hidden justify-center gap-3 md:w-1/3 drop-shadow-md">
             <div className="flex flex-col w-full">
               <label
@@ -78,7 +78,7 @@ export default function Home() {
                 className="text-[#000000] font-semibold h-8 active:outline-none focus:outline-none"
               />
             </div>
-            <button className="p-2 rounded-full bg-color-fourty w-12 h-12 flex-none">
+            <Link href="/search" className="p-2 rounded-full bg-color-fourty w-12 h-12 flex-none">
               <svg
                 width="30"
                 height="30"
@@ -98,7 +98,7 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-center items-center h-[50vh]">

@@ -22,26 +22,26 @@ const Footer = () => {
           <div className="flex flex-col gap-2 w-[15%]">
             <h1 className="font-bold text-xl">Info</h1>
             <div className="flex flex-col font-medium text-[#808080]">
-              <Link href="">Tentang Kami</Link>
-              <Link href="">Testimonial</Link>
-              <Link href="">Kontak</Link>
+              <Link href="/about">Tentang Kami</Link>
+              <Link href="/about">Testimonial</Link>
+              <Link href="/about">Kontak</Link>
             </div>
           </div>
           <div className="flex flex-col gap-2 md:self-start self-end w-fit md:w-[15%]">
             <h1 className="font-bold text-xl">Perusahaan</h1>
             <div className="flex flex-col font-medium text-[#808080]">
-              <Link href="">Syarat & Ketentuan</Link>
-              <Link href="">Kebijakan Privasi</Link>
-              <Link href="">Bantuan Pelayanan</Link>
+              <Link href="/about">Syarat & Ketentuan</Link>
+              <Link href="/about">Kebijakan Privasi</Link>
+              <Link href="/about">Bantuan Pelayanan</Link>
             </div>
           </div>
           <div className="flex flex-col gap-2 w-fit md:w-[15%]">
             <h1 className="font-bold text-xl">Kontak</h1>
             <div className="flex flex-col font-medium text-[#808080]">
-              <Link href="">
+              <Link href="/about">
                 Jl. Tunjungan Siola, Surabaya, Jawa Timur, Indonesia
               </Link>
-              <Link href="">Kebijakan Privasi</Link>
+              <Link href="/about">Kebijakan Privasi</Link>
               <Link href="">Bantuan Pelayanan</Link>
             </div>
           </div>
@@ -67,27 +67,27 @@ const Footer = () => {
           <div className="flex flex-col gap-2 w-[15%]">
             <h1 className="font-bold text-xl">Info</h1>
             <div className="flex flex-col font-medium">
-              <Link href="">Tentang Kami</Link>
-              <Link href="">Testimonial</Link>
-              <Link href="">Kontak</Link>
+              <Link href="/about">Tentang Kami</Link>
+              <Link href="/about">Testimonial</Link>
+              <Link href="/about">Kontak</Link>
             </div>
           </div>
           <div className="flex flex-col gap-2 md:self-start self-end w-fit md:w-[15%]">
             <h1 className="font-bold text-xl">Perusahaan</h1>
             <div className="flex flex-col font-medium">
-              <Link href="">Syarat & Ketentuan</Link>
-              <Link href="">Kebijakan Privasi</Link>
-              <Link href="">Bantuan Pelayanan</Link>
+              <Link href="/about">Syarat & Ketentuan</Link>
+              <Link href="/about">Kebijakan Privasi</Link>
+              <Link href="/about">Bantuan Pelayanan</Link>
             </div>
           </div>
           <div className="flex flex-col gap-2 w-fit md:w-[15%]">
             <h1 className="font-bold text-xl">Kontak</h1>
             <div className="flex flex-col font-medium">
-              <Link href="">
+              <Link href="/about">
                 Jl. Tunjungan Siola, Surabaya, Jawa Timur, Indonesia
               </Link>
-              <Link href="">Kebijakan Privasi</Link>
-              <Link href="">Bantuan Pelayanan</Link>
+              <Link href="/about">Kebijakan Privasi</Link>
+              <Link href="/about">Bantuan Pelayanan</Link>
             </div>
           </div>
         </div>
