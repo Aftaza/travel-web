@@ -33,7 +33,7 @@ export default function Home() {
           autoPlay
           loop
           muted
-          className="inset-0 absolute h-full -z-10 object-cover"
+          className="inset-0 absolute h-full w-full -z-10 object-cover"
         >
           <source src="https://serve.aftaza.my.id/public/videos/bgVideo.mp4" type="video/mp4" />
         </video>
