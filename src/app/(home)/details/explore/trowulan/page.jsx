@@ -2,7 +2,7 @@ export const metadata = {
     title: "Situs Trowulan | Virtual Tour",
   };
   
-  export default function Explore() {
+  export default function ExploreTrowulan() {
     return (
       <>
         <iframe

@@ -15,8 +15,8 @@ export default function bookingdetails() {
 
   return (
     <main className="flex flex-col pt-12">
-      <span className="h-12 flex items-center justify-center p-12">
-        <div className="w-1/2 h-2 bg-[#EFEFEF] relative">
+      <span className="h-12 flex items-center justify-center md:p-12">
+        <div className="w-3/4 md:w-1/2 h-2 bg-[#EFEFEF] relative">
           <div className="h-8 w-8 rounded-full bg-color-fourty left-0 bottom-1/2 translate-y-1/2 absolute flex justify-center items-center">
             <p className="text-color-white">1</p>
             <p className="text-color-fourty text-sm whitespace-nowrap translate-y-8 absolute">
@@ -37,8 +37,8 @@ export default function bookingdetails() {
           </div>
         </div>
       </span>
-      <section className="flex gap-8 px-12 py-8">
-        <div className="flex flex-col gap-4 w-1/2">
+      <section className="flex flex-col md:flex-row gap-8 px-12 py-8">
+        <div className="flex flex-col gap-4 md:w-1/2">
           <h3 className="font-semibold">Pilih Tiket Anda</h3>
           <div className="bg-[#efefef] p-4 flex flex-col gap-2 rounded-md text-sm text-[#333333]">
             <li>
@@ -84,11 +84,11 @@ export default function bookingdetails() {
             </div>
           </div>
         </div>
-        <div className="outline outline-1 outline-[#efefef] rounded-xl p-4 flex flex-col justify-between gap-8 w-1/2 h-fit">
+        <aside className="outline outline-1 outline-[#efefef] rounded-xl p-4 flex flex-col justify-between gap-8 md:w-1/2 h-fit">
           <h3 className="text-color-black font-semibold">Ringkasan Pesanan</h3>
           <div className="flex flex-col gap-4">
-            <div className="flex gap-2 h-24 border-b-[0.5]">
-              <div className="w-1/4 rounded-lg bg-color-fourty relative overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-2 h-24 border-b-[0.5]">
+              <div className="md:w-1/4 rounded-lg bg-color-fourty relative overflow-hidden">
                 <Image src="/images/bromo.jpg" fill alt="Bromo"/>
               </div>
               <div className="flex flex-col justify-between gap-2">
@@ -196,7 +196,7 @@ export default function bookingdetails() {
           <Link href="/booking/yourdetails" className="rounded-full py-3 flex items-center justify-center bg-[#FA8B02] text-color-white font-semibold">
             Menuju langkah berikutnya
           </Link>
-        </div>
+        </aside>
       </section>
     </main>
   );

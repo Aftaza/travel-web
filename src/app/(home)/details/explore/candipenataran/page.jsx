@@ -2,7 +2,7 @@ export const metadata = {
   title: "Candi Penataran | Virtual Tour",
 };
 
-export default function Explore() {
+export default function ExplorePenataran() {
   return (
     <>
       <iframe

@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function bookingdetails() {
   return (
     <main className="flex flex-col pt-12">
-      <span className="h-12 flex items-center justify-center p-12">
-        <div className="w-1/2 h-2 bg-[#EFEFEF] relative">
+      <span className="h-12 flex items-center justify-center md:p-12">
+        <div className="w-3/4 md:w-1/2 h-2 bg-[#EFEFEF] relative">
           <div className="h-8 w-8 rounded-full bg-[#efefef] left-0 bottom-1/2 translate-y-1/2 absolute flex justify-center items-center">
             <p className="text-[#A4A4A4]">1</p>
             <p className="text-[#A4A4A4] text-sm whitespace-nowrap translate-y-8 absolute">
@@ -25,8 +25,8 @@ export default function bookingdetails() {
           </div>
         </div>
       </span>
-      <section className="flex gap-8 px-12 py-8">
-        <div className="flex flex-col gap-8 w-1/2">
+      <section className="flex flex-col md:flex-row gap-8 px-12 py-8">
+        <div className="flex flex-col gap-8 md:w-1/2">
           <h3 className="font-semibold text-[#333333]">Data Pemesanan</h3>
           <form className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
@@ -78,19 +78,18 @@ export default function bookingdetails() {
             </label>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31612.36012390921!2d112.9324125566914!3d-7.9424929432158695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2sMt%20Bromo!5e0!3m2!1sen!2sid!4v1709571263264!5m2!1sen!2sid"
-              width="600"
-              height="450"
+              className="w-full min-h-64"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-        <div className="outline outline-1 outline-[#efefef] rounded-xl p-4 flex flex-col justify-between gap-8 w-1/2 h-fit">
+        <aside className="outline outline-1 outline-[#efefef] rounded-xl p-4 flex flex-col justify-between gap-8 md:w-1/2 h-fit">
           <h3 className="text-color-black font-semibold">Ringkasan Pesanan</h3>
           <div className="flex flex-col gap-4">
-            <div className="flex gap-2 h-24 border-b-[0.5]">
-              <div className="w-1/4 rounded-lg bg-color-fourty relative overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-2 h-24 border-b-[0.5]">
+              <div className="md:w-1/4 rounded-lg bg-color-fourty relative overflow-hidden">
                 <Image src="/images/bromo.jpg" fill alt="Bromo"/>
               </div>
               <div className="flex flex-col justify-between gap-2">
@@ -198,7 +197,7 @@ export default function bookingdetails() {
           <Link href="/booking/payment" className="rounded-full py-3 flex items-center justify-center bg-[#FA8B02] text-color-white font-semibold">
             Menuju langkah berikutnya
           </Link>
-        </div>
+        </aside>
       </section>
     </main>
   );

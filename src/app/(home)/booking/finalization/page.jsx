@@ -6,7 +6,7 @@ export default function bookingdetails() {
   return (
     <main className="flex flex-col pt-12">
       {submit ? (
-        <section className="h-[100vh] w-[100vw] grid place-content-center">
+        <section className="h-[80vh] md:h-[100vh] w-[100vw] grid place-content-center">
           <div className="flex flex-col items-center gap-4 text-center">
             <svg
               width="93"
@@ -35,8 +35,8 @@ export default function bookingdetails() {
         </section>
       ) : (
         <>
-          <span className="h-12 flex items-center justify-center p-12">
-            <div className="w-1/2 h-2 bg-[#EFEFEF] relative">
+          <span className="h-12 flex items-center justify-center md:p-12">
+            <div className="w-3/4 md:w-1/2 h-2 bg-[#EFEFEF] relative">
               <div className="h-8 w-8 rounded-full bg-[#efefef] left-0 bottom-1/2 translate-y-1/2 absolute flex justify-center items-center">
                 <p className="text-[#A4A4A4]">1</p>
                 <p className="text-[#A4A4A4] text-sm whitespace-nowrap translate-y-8 absolute">
@@ -57,8 +57,8 @@ export default function bookingdetails() {
               </div>
             </div>
           </span>
-          <section className="flex gap-8 px-12 py-8">
-            <div className="flex flex-col gap-8 w-1/2">
+          <section className="flex flex-col md:flex-row gap-8 px-12 py-8">
+            <div className="flex flex-col gap-8 md:w-1/2">
               <div>
                 <h3 className="font-semibold text-[#333333]">
                   Selesaikan Pembayaran Sebelum
@@ -123,7 +123,7 @@ export default function bookingdetails() {
                 </div>
               </div>
             </div>
-            <div className="outline outline-1 outline-[#efefef] rounded-xl flex flex-col justify-between w-1/2 h-fit font-semibold">
+            <aside className="outline outline-1 outline-[#efefef] rounded-xl flex flex-col justify-between md:w-1/2 h-fit font-semibold">
               <div className="flex flex-col gap-1 py-2 px-4 border-b border-[#efefef]">
                 <h4 className="text-[#606060]">NO. PESANAN</h4>
                 <h4 className="text-[#333333]">11233213</h4>
@@ -148,7 +148,7 @@ export default function bookingdetails() {
               >
                 Menuju langkah berikutnya
               </button>
-            </div>
+            </aside>
           </section>
         </>
       )}

@@ -1,11 +1,13 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Headers = () => {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
+  const path = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,13 +33,17 @@ const Headers = () => {
     return () => {
       window.removeEventListener("scroll", throttledHandleScroll);
     };
-  }, []); // Run only once when component mounts
+  }, []);
 
   return (
     <nav
       className={`hover:bg-[#0E0A0AD1] ${
-        color ? "bg-[#0E0A0AD1]" : "bg-transparent"
-      } flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
+        color
+          ? "bg-[#0E0A0AD1]"
+          : path.includes("/booking")
+          ? "bg-[#0E0A0AD1]"
+          : "bg-transparent"
+      } flex drop-shadow-xl flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
     >
       <div>
         <Image
@@ -46,7 +52,7 @@ const Headers = () => {
           width={80}
           height={50}
           quality={100}
-          className="object-cover"
+          className="object-contain"
         />
       </div>
       <div className="md:flex flex-row gap-3 hidden">

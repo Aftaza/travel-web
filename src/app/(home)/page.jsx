@@ -1,9 +1,18 @@
 "use client";
-import { Star } from "@/components/star";
-import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { useRef } from "react";
+import {
+  JelajahBromo,
+  JelajahPenataran,
+  JelajahTrowulan,
+  KategoriAirTerjun,
+  KategoriGunung,
+  KategoriPantai,
+  PromoLiburanBromo,
+  TerpopulerPenataran,
+  TestiCard,
+} from "@/components/card";
 export default function Home() {
   const containerRef = useRef();
   const scrollToNext = () => {
@@ -187,133 +196,14 @@ export default function Home() {
                 />
               </svg>
             </button>
-            <div ref={containerRef} className="flex gap-4 overflow-scroll scroll-snap-type-mandatory">
-              <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
-                <div className="w-[40%] relative flex-none">
-                  <Image
-                    src="/images/bromo.jpg"
-                    fill={true}
-                    alt="Bromo"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-4 p-3">
-                  <div className="flex flex-col">
-                    <h1 className="text-lg md:text-xl font-semibold md:whitespace-nowrap">
-                      Gunung Bromo, Jawa Timur
-                    </h1>
-                    <p className="font-light md:text-base text-sm">Indonesia</p>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="text-sm md:text-base font-semibold flex gap-2">
-                      <h2 className="line-through">Rp. 1.200.000</h2>{" "}
-                      <p className="text-[#FF6341]">15%</p>
-                    </div>
-                    <h1 className="text-base md:text-lg font-semibold">
-                      Rp. 800.000
-                    </h1>
-                  </div>
-                  <p className="ftext-xs md:text-sm font-light">
-                    Untuk 1 orang tiket pesawat, makan siang, makan....
-                  </p>
-                  <p className="font-semibold md:text-base text-sm">
-                    Berangkat: 15-04-2023
-                  </p>
-                  <div className="flex gap-2 justify-between">
-                    <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
-                      Lihat detail
-                    </button>
-                    <Link
-                      href="/booking"
-                      className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center"
-                    >
-                      Pesan
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
-                <div className="w-[40%] relative flex-none">
-                  <Image
-                    src="/images/bromo.jpg"
-                    fill={true}
-                    alt="Air Terjun"
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div className="flex flex-col gap-4 p-3">
-                  <div className="flex flex-col">
-                    <h1 className="text-lg md:text-xl font-semibold md:whitespace-nowrap">
-                      Gunung Bromo, Jawa Timur
-                    </h1>
-                    <p className="font-light md:text-base text-sm">Indonesia</p>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="text-sm md:text-base font-semibold flex gap-2">
-                      <h2 className="line-through">Rp. 1.200.000</h2>{" "}
-                      <p className="text-[#FF6341]">15%</p>
-                    </div>
-                    <h1 className="text-base md:text-lg font-semibold">
-                      Rp. 800.000
-                    </h1>
-                  </div>
-                  <p className="text-xs md:text-sm font-light">
-                    Untuk 1 orang tiket pesawat, makan siang, makan....
-                  </p>
-                  <p className="font-semibold md:text-base text-sm">
-                    Berangkat: 15-04-2023
-                  </p>
-                  <div className="flex gap-2 justify-between">
-                    <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
-                      Lihat detail
-                    </button>
-                    <button className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center">
-                      Pesan
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-none w-[80vw] md:w-2/5 bg-color-fourty rounded-3xl h-fit overflow-hidden text-color-white drop-shadow-lg">
-                <div className="w-[40%] relative flex-none">
-                  <Image
-                    src="/images/bromo.jpg"
-                    fill={true}
-                    alt="Bromo"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col gap-4 p-3">
-                  <div className="flex flex-col">
-                    <h1 className="text-lg md:text-xl font-semibold md:whitespace-nowrap">
-                      Gunung Bromo, Jawa Timur
-                    </h1>
-                    <p className="font-light md:text-base text-sm">Indonesia</p>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="text-sm md:text-base font-semibold flex gap-2">
-                      <h2 className="line-through">Rp. 1.200.000</h2>{" "}
-                      <p className="text-[#FF6341]">15%</p>
-                    </div>
-                    <h1 className="text-base md:text-lg font-semibold">
-                      Rp. 800.000
-                    </h1>
-                  </div>
-                  <p className="text-xs md:text-sm font-light">
-                    Untuk 1 orang tiket pesawat, makan siang, makan....
-                  </p>
-                  <p className="font-semibold md:text-base text-sm">
-                    Berangkat: 15-04-2023
-                  </p>
-                  <div className="flex gap-2 justify-between">
-                    <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
-                      Lihat detail
-                    </button>
-                    <button className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center">
-                      Pesan
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div
+              ref={containerRef}
+              className="flex gap-4 overflow-scroll scroll-snap-type-mandatory"
+            >
+              <PromoLiburanBromo />
+              <PromoLiburanBromo />
+              <PromoLiburanBromo />
+              <PromoLiburanBromo />
             </div>
           </div>
         </div>
@@ -340,118 +230,10 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex gap-4 overflow-x-scroll z-10 drop-shadow-xl">
-            <div className="rounded-2xl relative flex flex-col justify-end overflow-hidden h-96 flex-none w-[80vw] md:w-fit">
-              <p className="rounded-xl py-1 px-2 bg-color-black bg-opacity-80 w-fit absolute left-2 top-2 text-color-white font-semibold flex gap-1 items-center">
-                4.9
-                <Star className="w-4 -mt-[2px]" />
-              </p>
-              <Image
-                src="/images/candipenataran.png"
-                fill
-                alt="Candi Penataran"
-                className="object-cover -z-10"
-                quality={100}
-              />
-              <div className="m-2 rounded-xl bg-color-fourty bg-opacity-85 h-fit flex flex-col gap-2 justify-between p-2 leading-none text-color-white">
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Candi Penataran, Blitar</h1>
-                  <p className="">Indonesia</p>
-                </div>
-                <p className="text-sm">
-                  Untuk 1 orang tiket pesawat, makan siang, makan....
-                </p>
-                <div className="flex justify-between gap-2 items-center">
-                  <h3 className="font-semibold">Rp. 900.000</h3>
-                  <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
-                    Pesan
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl relative flex flex-col justify-end overflow-hidden h-96 flex-none w-[80vw] md:w-fit">
-              <p className="rounded-xl py-1 px-2 bg-color-black bg-opacity-80 w-fit absolute left-2 top-2 text-color-white font-semibold flex gap-1 items-center">
-                4.9
-                <Star className="w-4 -mt-[2px]" />
-              </p>
-              <Image
-                src="/images/candipenataran.png"
-                fill
-                alt="Candi Penataran"
-                className="object-cover -z-10"
-                quality={100}
-              />
-              <div className="m-2 rounded-xl bg-color-fourty bg-opacity-85 h-fit flex flex-col gap-2 justify-between p-2 leading-none text-color-white">
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Candi Penataran, Blitar</h1>
-                  <p className="">Indonesia</p>
-                </div>
-                <p className="text-sm">
-                  Untuk 1 orang tiket pesawat, makan siang, makan....
-                </p>
-                <div className="flex justify-between gap-2 items-center">
-                  <h3 className="font-semibold">Rp. 900.000</h3>
-                  <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
-                    Pesan
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl relative flex flex-col justify-end overflow-hidden h-96 flex-none w-[80vw] md:w-fit">
-              <p className="rounded-xl py-1 px-2 bg-color-black bg-opacity-80 w-fit absolute left-2 top-2 text-color-white font-semibold flex gap-1 items-center">
-                4.9
-                <Star className="w-4 -mt-[2px]" />
-              </p>
-              <Image
-                src="/images/candipenataran.png"
-                fill
-                alt="Candi Penataran"
-                className="object-cover -z-10"
-                quality={100}
-              />
-              <div className="m-2 rounded-xl bg-color-fourty bg-opacity-85 h-fit flex flex-col gap-2 justify-between p-2 leading-none text-color-white">
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Candi Penataran, Blitar</h1>
-                  <p className="">Indonesia</p>
-                </div>
-                <p className="text-sm">
-                  Untuk 1 orang tiket pesawat, makan siang, makan....
-                </p>
-                <div className="flex justify-between gap-2 items-center">
-                  <h3 className="font-semibold">Rp. 900.000</h3>
-                  <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
-                    Pesan
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-2xl relative flex flex-col justify-end overflow-hidden h-96 flex-none w-[80vw] md:w-fit">
-              <p className="rounded-xl py-1 px-2 bg-color-black bg-opacity-80 w-fit absolute left-2 top-2 text-color-white font-semibold flex gap-1 items-center">
-                4.9
-                <Star className="w-4 -mt-[2px]" />
-              </p>
-              <Image
-                src="/images/candipenataran.png"
-                fill
-                alt="Candi Penataran"
-                className="object-cover -z-10"
-                quality={100}
-              />
-              <div className="m-2 rounded-xl bg-color-fourty bg-opacity-85 h-fit flex flex-col gap-2 justify-between p-2 leading-none text-color-white">
-                <div className="flex flex-col">
-                  <h1 className="font-semibold">Candi Penataran, Blitar</h1>
-                  <p className="">Indonesia</p>
-                </div>
-                <p className="text-sm">
-                  Untuk 1 orang tiket pesawat, makan siang, makan....
-                </p>
-                <div className="flex justify-between gap-2 items-center">
-                  <h3 className="font-semibold">Rp. 900.000</h3>
-                  <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
-                    Pesan
-                  </button>
-                </div>
-              </div>
-            </div>
+            <TerpopulerPenataran />
+            <TerpopulerPenataran />
+            <TerpopulerPenataran />
+            <TerpopulerPenataran />
           </div>
         </div>
       </section>
@@ -542,79 +324,61 @@ export default function Home() {
           </div>
         </Marquee>
       </span>
-      <section className="flex flex-col p-12 gap-4 bg-color-white">
-        <div className="flex justify-between items-center">
-          <h1 className="font-bold text-2xl md:text-4xl">Kategori Tempat</h1>
-          <Link
-            href="/"
-            className="text-color-fourty font-semibold underline flex gap-1 items-center"
-          >
-            View All
-            <svg
-              width="18"
-              height="16"
-              viewBox="0 0 24 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+      <section className="flex flex-col p-12 gap-8 bg-color-white">
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-2xl md:text-4xl">Kategori Tempat</h1>
+            <Link
+              href="/"
+              className="text-color-fourty font-semibold underline flex gap-1 items-center"
             >
-              <path
-                d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
-                fill="#4CACBC"
-              />
-            </svg>
-          </Link>
+              View All
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
+                  fill="#4CACBC"
+                />
+              </svg>
+            </Link>
+          </div>
+          <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
+            <KategoriGunung />
+            <KategoriAirTerjun />
+            <KategoriPantai />
+          </div>
         </div>
-        <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
-          <div className="w-[80vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty overflow-hidden relative aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Gunung
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Gunung
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur adalah surga bagi para penggemar alam dengan gunung-gunung menarik seperti Bromo dengan padang pasirnya yang luas, Semeru yang menantang, Ijen dengan blue flame-nya yang spektakuler, dan Arjuno-Welirang dengan pemandangan alam yang menawan. Semua ini menjadikan Jawa Timur destinasi impian bagi para pendaki!
-            </p>
-            <Image
-              src="/images/bromo.jpg"
-              fill={true}
-              alt="Bromo"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-2xl md:text-4xl">Jelajahi Wisata</h1>
+            <Link
+              href="/"
+              className="text-color-fourty font-semibold underline flex gap-1 items-center"
+            >
+              View All
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 24 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.4956 10.9961L-5.79623e-05 21.6262L16.2121 10.9392L0.168975 3.26328e-07L23.4956 10.9961Z"
+                  fill="#4CACBC"
+                />
+              </svg>
+            </Link>
           </div>
-          <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Air Terjun
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Air Terjun
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur juga dikenal dengan keindahan air terjunnya yang menakjubkan. Mulai dari Air Terjun Madakaripura yang megah dengan ketinggian yang mengagumkan dan legenda yang mengelilinginya, hingga Air Terjun Tumpak Sewu yang memukau dengan aliran airnya yang lembut dan panorama alam sekitarnya yang memesona. Ada juga Air Terjun Coban Rondo yang cantik dengan suasana sejuk dan rimbunnya pepohonan di sekitarnya.
-            </p>
-            <Image
-              src="/images/airterjun.png"
-              fill={true}
-              alt="Air Terjun"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
-          </div>
-          <div className="w-[85vw] md:w-1/2 lg:w-1/3 rounded-3xl h-full bg-color-fourty relative overflow-hidden aspect-square flex-none group transition duration-700 ease-in-out">
-            <p className="absolute font-semibold z-10 text-color-white text-4xl inset-0 grid place-content-center group-hover:-translate-x-96 transition duration-700 ease-in-out">
-              Pantai
-            </p>
-            <p className="absolute -translate-x-24 group-hover:translate-x-4 top-3 font-semibold z-10 text-color-white text-xl transition duration-700 ease-in-out">
-              Pantai
-            </p>
-            <p className="absolute place-self-center text-lg text-color-white font-semibold z-10 inset-0 text-center transition duration-700 -translate-x-[600px] group-hover:translate-x-0 ease-in-out px-2">
-            Jawa Timur memiliki pantai-pantai menakjubkan seperti Pantai Malang Selatan dengan pasir putih halusnya, Pantai Papuma dengan tebing karang spektakuler, Pantai Banyuwangi yang berpasir emas, dan Pantai Pasir Putih Situbondo yang luas. Surga bagi penggemar pantai!
-            </p>
-            <Image
-              src="/images/pantai.jpg"
-              fill={true}
-              alt="Pantai"
-              className="group-hover:scale-110 group-hover:blur-sm transition duration-700 ease-in-out"
-            />
+          <div className="h-[65dvh] flex gap-4 overflow-x-scroll -mx-2 md:mx-0">
+            <JelajahBromo />
+            <JelajahPenataran />
+            <JelajahTrowulan />
           </div>
         </div>
       </section>
@@ -624,156 +388,11 @@ export default function Home() {
           <h1 className="md:text-4xl">Pendapat pelanggan tentang kami</h1>
         </div>
         <div className="flex flex-row gap-4 overflow-y-visible overflow-x-clip">
-          <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-            <h1 className="absolute -top-2 right-4 text-6xl font-bold">"</h1>
-            <div className="flex flex-row gap-2 w-full items-center">
-              <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
-                <Image
-                  src="/images/ava.png"
-                  fill
-                  alt="Putri"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <h6 className="text-xl font-bold">Putri</h6>
-                <h6 className="text-xl font-bold">Jakarta</h6>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-3">
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-              </div>
-              <p className="font-semibold text-xs">
-                Nyari makanan mudah, udah ada tour guidenya. Tour guidenya ramah
-                banget dan penginapannya nyaman.
-              </p>
-            </div>
-          </div>
-          <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-            <h1 className="absolute -top-2 right-4 text-6xl font-bold">"</h1>
-            <div className="flex flex-row gap-2 w-full items-center">
-              <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
-                <Image
-                  src="/images/ava.png"
-                  fill
-                  alt="Putri"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <h6 className="text-xl font-bold">Putri</h6>
-                <h6 className="text-xl font-bold">Jakarta</h6>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-3">
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-              </div>
-              <p className="font-semibold text-xs">
-                Nyari makanan mudah, udah ada tour guidenya. Tour guidenya ramah
-                banget dan penginapannya nyaman.
-              </p>
-            </div>
-          </div>
-          <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-            <h1 className="absolute -top-2 right-4 text-6xl font-bold">"</h1>
-            <div className="flex flex-row gap-2 w-full items-center">
-              <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
-                <Image
-                  src="/images/ava.png"
-                  fill
-                  alt="Putri"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <h6 className="text-xl font-bold">Putri</h6>
-                <h6 className="text-xl font-bold">Jakarta</h6>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-3">
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-              </div>
-              <p className="font-semibold text-xs">
-                Nyari makanan mudah, udah ada tour guidenya. Tour guidenya ramah
-                banget dan penginapannya nyaman.
-              </p>
-            </div>
-          </div>
-          <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-            <h1 className="absolute -top-2 right-4 text-6xl font-bold">"</h1>
-            <div className="flex flex-row gap-2 w-full items-center">
-              <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
-                <Image
-                  src="/images/ava.png"
-                  fill
-                  alt="Putri"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <h6 className="text-xl font-bold">Putri</h6>
-                <h6 className="text-xl font-bold">Jakarta</h6>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-3">
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-              </div>
-              <p className="font-semibold text-xs">
-                Nyari makanan mudah, udah ada tour guidenya. Tour guidenya ramah
-                banget dan penginapannya nyaman.
-              </p>
-            </div>
-          </div>
-          <div className="w-3/5 md:w-1/5 bg-[#fff] flex flex-col gap-2 p-2 md:p-3 flex-none relative">
-            <h1 className="absolute -top-2 right-4 text-6xl font-bold">"</h1>
-            <div className="flex flex-row gap-2 w-full items-center">
-              <div className="w-[30%] aspect-square rounded-full overflow-hidden relative">
-                <Image
-                  src="/images/ava.png"
-                  fill
-                  alt="Putri"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-[70%] flex flex-col">
-                <h6 className="text-xl font-bold">Putri</h6>
-                <h6 className="text-xl font-bold">Jakarta</h6>
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-3">
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-                <Star className="w-6" />
-              </div>
-              <p className="font-semibold text-xs">
-                Nyari makanan mudah, udah ada tour guidenya. Tour guidenya ramah
-                banget dan penginapannya nyaman.
-              </p>
-            </div>
-          </div>
+          <TestiCard />
+          <TestiCard />
+          <TestiCard />
+          <TestiCard />
+          <TestiCard />
         </div>
       </section>
     </main>
