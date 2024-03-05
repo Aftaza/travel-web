@@ -14,8 +14,7 @@ const Headers = () => {
       setColor(false);
     }
   };
-    window.addEventListener("scroll", changeColor);    
-
+  window.addEventListener("scroll", changeColor);
 
   return (
     <nav
@@ -24,14 +23,7 @@ const Headers = () => {
       } flex flex-row justify-between px-4 md:px-8 py-2 text-color-white items-center font-semibold fixed w-[100vw] z-40 transition duration-700 ease-in-out`}
     >
       <div>
-        <Image
-          src="/logoWhite.png"
-          alt="Logo"
-          width={80}
-          height={50}
-          quality={100}
-          objectFit="contain"
-        />
+        <Image src="/logoWhite.png" alt="Logo" width={80} height={50} quality={100} objectFit="contain"/>
       </div>
       <div className="md:flex flex-row gap-3 hidden">
         <Link href={"/"}>Beranda</Link>
