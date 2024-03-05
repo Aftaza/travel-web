@@ -67,7 +67,7 @@ export default function Home() {
           <div className="bg-color-white rounded-2xl p-3 h-fit items-center flex md:hidden justify-center gap-3 md:w-1/3 drop-shadow-md">
             <div className="flex flex-col w-full">
               <label
-                for="destination"
+                htmlFor="destination"
                 className="font-bold text-color-black text-start"
               >
                 Destination
@@ -86,7 +86,7 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_17_11)">
+                <g clipPath="url(#clip0_17_11)">
                   <path
                     d="M49.5781 46.2181L40.0781 36.7066C39.7704 36.3913 39.4278 36.1121 39.0569 35.8744L36.6819 34.2337C41.5671 28.1817 41.6124 19.5486 36.7911 13.4455C31.9698 7.34234 23.5685 5.398 16.5611 8.76355C9.55368 12.1291 5.81028 19.9063 7.5471 27.4909C9.28393 35.0754 16.0374 40.4431 23.8094 40.4161C27.581 40.4172 31.2409 39.1343 34.1881 36.778L35.9694 39.1558C36.1806 39.4621 36.4191 39.7486 36.6819 40.0119L46.1819 49.5233C46.4048 49.7484 46.7084 49.875 47.025 49.875C47.3416 49.875 47.6451 49.7484 47.8681 49.5233L49.5306 47.8588C49.9815 47.4123 50.0024 46.69 49.5781 46.2181ZM23.8094 35.6604C17.251 35.6604 11.9344 30.3373 11.9344 23.7711C11.9344 17.2048 17.251 11.8817 23.8094 11.8817C30.3677 11.8817 35.6844 17.2048 35.6844 23.7711C35.6844 26.9243 34.4333 29.9484 32.2063 32.1781C29.9793 34.4078 26.9588 35.6604 23.8094 35.6604Z"
                     fill="white"
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="flex justify-center items-center h-[50vh]">
           <div className="bg-color-white rounded-2xl p-3 h-fit items-center hidden md:flex justify-center gap-3 md:w-1/3  drop-shadow-md">
             <div className="flex flex-col w-full">
-              <label for="destination" className="font-bold">
+              <label htmlFor="destination" className="font-bold">
                 Destination
               </label>
               <input
@@ -121,7 +121,7 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_17_11)">
+                <g clipPath="url(#clip0_17_11)">
                   <path
                     d="M49.5781 46.2181L40.0781 36.7066C39.7704 36.3913 39.4278 36.1121 39.0569 35.8744L36.6819 34.2337C41.5671 28.1817 41.6124 19.5486 36.7911 13.4455C31.9698 7.34234 23.5685 5.398 16.5611 8.76355C9.55368 12.1291 5.81028 19.9063 7.5471 27.4909C9.28393 35.0754 16.0374 40.4431 23.8094 40.4161C27.581 40.4172 31.2409 39.1343 34.1881 36.778L35.9694 39.1558C36.1806 39.4621 36.4191 39.7486 36.6819 40.0119L46.1819 49.5233C46.4048 49.7484 46.7084 49.875 47.025 49.875C47.3416 49.875 47.6451 49.7484 47.8681 49.5233L49.5306 47.8588C49.9815 47.4123 50.0024 46.69 49.5781 46.2181ZM23.8094 35.6604C17.251 35.6604 11.9344 30.3373 11.9344 23.7711C11.9344 17.2048 17.251 11.8817 23.8094 11.8817C30.3677 11.8817 35.6844 17.2048 35.6844 23.7711C35.6844 26.9243 34.4333 29.9484 32.2063 32.1781C29.9793 34.4078 26.9588 35.6604 23.8094 35.6604Z"
                     fill="white"
