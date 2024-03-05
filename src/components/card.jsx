@@ -28,65 +28,19 @@ export const CardTravel = () => {
         </p>
         <div className="flex justify-between gap-2 items-center">
           <h3 className="font-semibold">Rp. 900.000</h3>
-          <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
+          <Link href="/booking" className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
             Pesan
-          </button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export const TiktokCard = ({ className }) => {
+export const TiktokCard = () => {
   return (
     <>
-      <blockquote
-        class="tiktok-embed"
-        cite="https://www.tiktok.com/@firasaff802/video/7313029291170598149"
-        data-video-id="7313029291170598149"
-        style={{ minWidth: "450", minHeight: "550" }}
-        className={className}
-      >
-        <section className="p-10">
-          <a
-            target="_blank"
-            title="@firasaff802"
-            href="https://www.tiktok.com/@firasaff802?refer=embed"
-          >
-            @firasaff802
-          </a>
-          Bromo makin cantik tapi gaboleh di naikin🥹😍
-          <a
-            title="bromotenggersemeru"
-            target="_blank"
-            href="https://www.tiktok.com/tag/bromotenggersemeru?refer=embed"
-          >
-            #bromotenggersemeru
-          </a>
-          <a
-            title="capcut"
-            target="_blank"
-            href="https://www.tiktok.com/tag/capcut?refer=embed"
-          >
-            #CapCut
-          </a>
-          <a
-            title="foryoupage"
-            target="_blank"
-            href="https://www.tiktok.com/tag/foryoupage?refer=embed"
-          >
-            #foryoupage
-          </a>
-          <a
-            target="_blank"
-            title="♬ suara asli  - Firasaff802"
-            href="https://www.tiktok.com/music/suara-asli-Firasaff802-7313029360918153990?refer=embed"
-          >
-            ♬ suara asli - Firasaff802
-          </a>
-        </section>
-      </blockquote>
-      <script async src="https://www.tiktok.com/embed.js"></script>
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@firasaff802/video/7313029291170598149" data-video-id="7313029291170598149" style={{maxWidth: "605px", minHeight: "325px"}} > <section> <a target="_blank" title="@firasaff802" href="https://www.tiktok.com/@firasaff802?refer=embed">@firasaff802</a> Bromo makin cantik tapi gaboleh di naikin🥹😍 <a title="bromotenggersemeru" target="_blank" href="https://www.tiktok.com/tag/bromotenggersemeru?refer=embed">#bromotenggersemeru</a> <a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage?refer=embed">#foryoupage</a> <a target="_blank" title="♬ suara asli  - Firasaff802" href="https://www.tiktok.com/music/suara-asli-Firasaff802-7313029360918153990?refer=embed">♬ suara asli  - Firasaff802</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     </>
   );
 };
@@ -215,9 +169,9 @@ export const PromoLiburanBromo = () => {
           Berangkat: 15-04-2023
         </p>
         <div className="flex gap-2 justify-between">
-          <button className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
+          <Link href="details/wisata" className="md:text-base text-sm p-2 rounded-3xl outline outline-1 outline-color-white w-1/2 flex justify-center items-center">
             Lihat detail
-          </button>
+          </Link>
           <Link
             href="/booking"
             className="md:text-base text-sm p-2 rounded-3xl bg-color-primary text-color-black w-1/2 flex justify-center items-center"
@@ -325,9 +279,9 @@ export const TerpopulerPenataran = () => {
         </p>
         <div className="flex justify-between gap-2 items-center">
           <h3 className="font-semibold">Rp. 900.000</h3>
-          <button className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
+          <Link href="/details/wisata" className="py-2 px-4 rounded-2xl bg-color-primary text-color-black font-semibold text-sm">
             Pesan
-          </button>
+          </Link>
         </div>
       </div>
     </div>

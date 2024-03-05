@@ -105,7 +105,7 @@ export default function Home() {
           <div className="bg-color-white rounded-2xl p-3 h-fit items-center hidden md:flex justify-center gap-3 md:w-1/3  drop-shadow-md">
             <div className="flex flex-col w-full">
               <label for="destination" className="font-bold">
-                Destination
+                Tujuan
               </label>
               <input
                 type="text"
