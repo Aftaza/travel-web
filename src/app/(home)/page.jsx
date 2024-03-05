@@ -35,7 +35,7 @@ export default function Home() {
           muted
           className="inset-0 absolute h-full -z-10 object-cover"
         >
-          <source src="/videos/bgVideo.mp4" type="video/mp4" />
+          <source src="https://serve.aftaza.my.id/public/videos/bgVideo.mp4" type="video/mp4" />
         </video>
         <div className="flex flex-col gap-4 text-color-white text-center md:text-left md:w-1/3 drop-shadow-lg h-[60vh] md:h-fit justify-center md:justify-start">
           <div className="flex flex-col gap-2">
