@@ -1,5 +1,5 @@
 'use client'
-import { CardTravel, KategoriGunung } from "@/components/card";
+import { CardTravel, PromoLiburanBromo } from "@/components/card";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -53,16 +53,16 @@ export default function Profile() {
       </section>
       <section className="min-h-screen relative">
         {activeSection === "history" ? (
-          <div className="absolute inset-0 flex justify-around pt-10 z-10">
+          <div className="absolute inset-0 flex justify-around pt-10 z-10 gap-4 overflow-scroll">
             <CardTravel />
             <CardTravel />
             <CardTravel />
           </div>
         ) : (
-          <div className="absolute inset-0 flex justify-around pt-10 z-10">
-            <KategoriGunung/>
-            <KategoriGunung/>
-            <KategoriGunung/>
+          <div className="absolute inset-0 flex justify-around pt-10 z-10 gap-4 overflow-scroll">
+            <PromoLiburanBromo/>
+            <PromoLiburanBromo/>
+            <PromoLiburanBromo/>
           </div>
         )}
         <Image

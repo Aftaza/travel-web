@@ -105,7 +105,7 @@ const DetailWisata = () => {
         <h1 className="font-bold text-2xl">Apa kata mereka ?</h1>
         <div className="flex justify-between gap-10 overflow-x-scroll z-10 drop-shadow-lg">
           <TiktokCard />
-          <TiktokCard className="scale-105"/>
+          <TiktokCard />
           <TiktokCard />
         </div>
       </section>
