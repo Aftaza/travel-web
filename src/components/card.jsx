@@ -37,7 +37,7 @@ export const CardTravel = () => {
   );
 };
 
-export const TiktokCard = () => {
+export const TiktokCard = ({ className }) => {
   return (
     <>
       <blockquote
@@ -45,6 +45,7 @@ export const TiktokCard = () => {
         cite="https://www.tiktok.com/@firasaff802/video/7313029291170598149"
         data-video-id="7313029291170598149"
         style={{ minWidth: "450", minHeight: "550" }}
+        className={className}
       >
         <section className="p-10">
           <a
